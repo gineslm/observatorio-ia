@@ -1,0 +1,71 @@
+"""Valida los JSON de data/ contra schemas/ y aplica reglas extra.
+
+Uso: .venv/Scripts/python scripts/validate.py
+Sale con código 1 si hay errores. Los avisos no bloquean.
+"""
+import json
+import sys
+from pathlib import Path
+
+from jsonschema import Draft202012Validator
+
+ROOT = Path(__file__).resolve().parent.parent
+DATA = ROOT / "data"
+SCHEMAS = ROOT / "schemas"
+
+errors: list[str] = []
+warnings: list[str] = []
+
+
+def load(path: Path):
+    with path.open(encoding="utf-8") as f:
+        return json.load(f)
+
+
+def check_schema(data_path: Path, schema_name: str):
+    schema = load(SCHEMAS / schema_name)
+    data = load(data_path)
+    for e in Draft202012Validator(schema).iter_errors(data):
+        loc = "/".join(str(p) for p in e.absolute_path) or "(raíz)"
+        errors.append(f"{data_path.relative_to(ROOT)}: {loc}: {e.message}")
+    return data
+
+
+def main() -> int:
+    sources = check_schema(DATA / "sources.json", "sources.schema.json")
+    source_ids = set()
+    for s in sources.get("sources", []):
+        sid = s.get("id")
+        if sid in source_ids:
+            errors.append(f"sources.json: id duplicado {sid}")
+        source_ids.add(sid)
+        # Regla: un Alto en C3 exige evidencia P.
+        c3 = s.get("institutional_evaluation", {}).get("c3", {})
+        if c3.get("value") == "Alto" and c3.get("evidence_level") != "P":
+            msg = f"sources.json: {sid} C3=Alto sin evidencia P (nivel: {c3.get('evidence_level')})"
+            # Aviso mientras no haya revisión humana; error después.
+            (errors if s.get("reviewed_by_human") else warnings).append(msg)
+
+    item_ids = set()
+    for path in sorted((DATA / "items").glob("*.json")):
+        for it in check_schema(path, "items.schema.json"):
+            if not isinstance(it, dict):
+                continue
+            if it.get("id") in item_ids:
+                errors.append(f"{path.name}: id duplicado {it.get('id')}")
+            item_ids.add(it.get("id"))
+            if it.get("source_id") not in source_ids:
+                errors.append(f"{path.name}: {it.get('id')} apunta a fuente inexistente {it.get('source_id')}")
+
+    check_schema(DATA / "gold-set" / "corrections.json", "corrections.schema.json")
+
+    for w in warnings:
+        print(f"AVISO  {w}")
+    for e in errors:
+        print(f"ERROR  {e}")
+    print(f"\n{len(errors)} errores, {len(warnings)} avisos.")
+    return 1 if errors else 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

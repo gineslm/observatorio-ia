@@ -1,0 +1,13 @@
+# Documentos y datos privados: no versionar
+private/
+*.private.*
+perfil-*.md
+.env
+*.key
+.DS_Store
+node_modules/
+vendor/
+
+# Entorno local
+.venv/
+__pycache__/

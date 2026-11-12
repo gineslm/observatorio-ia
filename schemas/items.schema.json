@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Piezas de un mes (data/items/AAAA-MM.json)",
+  "type": "array",
+  "items": {"$ref": "#/$defs/item"},
+  "$defs": {
+    "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+    "criterion": {
+      "type": "object",
+      "required": ["value", "evidence_level"],
+      "additionalProperties": false,
+      "properties": {
+        "value": {"enum": ["Alto", "Medio", "Bajo", "NE"]},
+        "evidence_level": {"enum": ["P", "S", "M", "-", null]},
+        "note": {"type": "string"}
+      }
+    },
+    "item": {
+      "type": "object",
+      "required": ["id", "source_id", "url", "title", "captured_at", "content_type", "entry_reason", "summary", "review", "labels"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^P-\\d{4}-\\d{2}-\\d{4}$"},
+        "source_id": {"type": "string", "pattern": "^S\\d{2,}$"},
+        "url": {"type": "string", "pattern": "^https?://"},
+        "title": {"type": "string", "minLength": 1},
+        "authors": {"type": "array", "items": {"type": "string"}},
+        "published_at": {"oneOf": [{"$ref": "#/$defs/date"}, {"type": "null"}]},
+        "captured_at": {"$ref": "#/$defs/date"},
+        "language": {"type": ["string", "null"]},
+        "original_language": {"type": ["string", "null"]},
+        "translated_from": {"type": ["string", "null"]},
+        "content_type": {"enum": ["noticia", "informe", "analisis", "opinion", "traduccion", "dataset", "otro"]},
+        "entry_reason": {
+          "type": "object",
+          "required": ["channel"],
+          "additionalProperties": false,
+          "properties": {
+            "channel": {"enum": ["feed", "consulta", "busqueda_manual", "otro"]},
+            "detail": {"type": "string"}
+          }
+        },
+        "summary": {"type": "string", "minLength": 1},
+        "argues": {"type": "string"},
+        "quality": {
+          "type": "object",
+          "required": ["date", "rubric_version"],
+          "additionalProperties": false,
+          "properties": {
+            "date": {"$ref": "#/$defs/date"},
+            "rubric_version": {"type": "string"},
+            "c2": {"$ref": "#/$defs/criterion"},
+            "c4": {"$ref": "#/$defs/criterion"},
+            "c5": {"$ref": "#/$defs/criterion"}
+          }
+        },
+        "identifiers": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "doi": {"type": ["string", "null"]},
+            "arxiv": {"type": ["string", "null"]},
+            "openalex": {"type": ["string", "null"]}
+          }
+        },
+        "links_to_primary": {"type": "array", "items": {"type": "string"}},
+        "review": {
+          "type": "object",
+          "required": ["reviewed_by_human"],
+          "additionalProperties": false,
+          "properties": {
+            "reviewed_by_human": {"type": "boolean"},
+            "date": {"oneOf": [{"$ref": "#/$defs/date"}, {"type": "null"}]}
+          }
+        },
+        "labels": {"type": "array", "maxItems": 0, "description": "Vacío hasta el primer análisis de categorías"}
+      }
+    }
+  }
+}

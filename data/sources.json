@@ -1,0 +1,1292 @@
+{
+  "schema_version": "1.0",
+  "rubric_version": "v0",
+  "note": "Propuestas del asistente sin revisión humana. evidence_level null = pendiente de asignar desde legacy_evidence_notes.",
+  "sources": [
+    {
+      "id": "S01",
+      "name": "OECD.AI Policy Observatory",
+      "kind": null,
+      "type": "Observatorio / base de datos",
+      "region": "Internacional (OCDE)",
+      "languages": [
+        "EN",
+        "FR"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://oecd.ai",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": null,
+        "item_ids": [],
+        "c2": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[P] Metodología leída (página sin fecha): eventos de Event Registry (>150.000 artículos/día), ~1.000 eventos/día revisados y ~30 incidentes/peligros añadidos al día; GPT-4o mini filtra, GPT-4o confirma, o3-mini genera resúmenes; no describe revisión humana. Declara que es un subconjunto, que no verifica de forma independiente la información de terceros y que puede haber errores. Apoyo de la Patrick J. McGovern Foundation confirmado. Financiación general OCDE sin verificar. Muestreo de incidentes concretos pendiente.",
+      "legacy_review_status": "Fase 2: método evaluado; sin muestreo de incidentes"
+    },
+    {
+      "id": "S02",
+      "name": "AI Incident Database (Responsible AI Collaborative)",
+      "kind": null,
+      "type": "Base de datos colaborativa",
+      "region": "EE. UU.",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://incidentdatabase.ai",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": null,
+        "item_ids": [],
+        "c2": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[S] Open Philanthropy 100k USD (feb 2023, vía base de terceros); blog de financiación ene 2026. Aviso: patrocinios previstos de empresas GRC/cumplimiento (liderado por Trustible.ai) → posible conflicto de intereses. Licencia MIT. Fase 2 [P] Guía editorial v2: exige fuente primaria o la mejor accesible, conserva título/autor/fecha de cada informe, prohíbe reescribir; registra 'alegaciones públicamente documentadas' sin juzgarlas; títulos con 'supuestamente' si hay disputa; notas del editor separadas. Reconoce límites (exportaciones con retraso, fusiones irreversibles). Guía leída ~70 % (truncada). Se evaluó el método, no incidentes concretos.",
+      "legacy_review_status": "Fase 2: método evaluado; sin muestreo de incidentes"
+    },
+    {
+      "id": "S03",
+      "name": "AIAAIC Repository",
+      "kind": null,
+      "type": "Base de datos / repositorio",
+      "region": "Internacional",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://www.aiaaic.org",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": null,
+        "item_ids": [],
+        "c2": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[S] Ficha en Meaningful Transparency: 'iniciativa de Action Coalition'; se autodefine 'independiente, no partidista, de interés público'; contacto vía Brainbox Institute. Forma jurídica, financiación, licencia y metodología NO aparecen en lo leído: las páginas About y guía de usuario de aiaaic.org llegaron truncadas (>340k caracteres) y no se leyeron; un intento posterior con Chrome congeló la página. Asociación con Charlie Pownall [M], sin confirmar.",
+      "legacy_review_status": "Fase 1: parcial; reintentar"
+    },
+    {
+      "id": "S04",
+      "name": "AI Governance Database (Seattle U)",
+      "kind": null,
+      "type": "Base de datos académica",
+      "region": "EE. UU.",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://www.seattleu.edu/technology-ethics-initiative/projects/ai-governance-database/",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": null,
+        "item_ids": [],
+        "c2": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[P] Página de Seattle University (Technology Ethics Initiative, enlaza governancedb.ai): 'base de datos de noticias de gobernanza de IA'. No nombra responsables, financiación, metodología ni avisos. Términos y políticas no leídos. Es un listado de noticias, no análisis propio. La web governancedb.ai no devolvió texto legible con Chrome.",
+      "legacy_review_status": "Fase 1: parcial"
+    },
+    {
+      "id": "S05",
+      "name": "Stanford AI Index (HAI)",
+      "kind": null,
+      "type": "Informe anual / datos",
+      "region": "EE. UU.",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://aiindex.stanford.edu",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 1,
+        "item_ids": [],
+        "c2": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[P] Datos públicos. [S] Apoyos según wiki de terceros: Google, NSF, OpenAI, Open Philanthropy, Quid; subvención de Open Phil de 78k USD verificada. Aviso: financiación de industria. Vínculo: Jack Clark (Import AI) fue miembro fundador del AI Index 2017–2024 según su biografía [P]. Fase 2 (Chrome), n=1 portada de la edición 2026 con sus 10 'Top takeaways': cifras concretas con enlace al capítulo correspondiente y datos públicos; algunas cautelas (p. ej. la inversión privada 'probablemente subestima' el gasto total de China). Pero se presenta a sí mismo como datos 'sin sesgo' y abre con 'la IA está llamada a ser la tecnología más transformadora del siglo XXI' (tono promocional). Sin lista de apoyos en la portada, solo enlace de donación. No se leyó el PDF completo: metodología y límites sin verificar, C2 Alto provisional.",
+      "legacy_review_status": "Fase 2: muestreo n=1 (portada); informe completo pendiente"
+    },
+    {
+      "id": "S06",
+      "name": "Transluce",
+      "kind": null,
+      "type": "Laboratorio de investigación sin ánimo de lucro",
+      "region": "EE. UU.",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://transluce.org",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 1,
+        "item_ids": [],
+        "c2": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "Fundadores Steinhardt y Schwettmann; asesores Bengio y Liang. Financiación filantrópica; recaudación en Manifund; donantes NO verificados. Fase 2, n=1 (anuncio de evaluación de salud mental, 31 ago 2026): C2 Alto, con método cuantificado (77 modelos, 157 usuarios simulados, >50.000 conversaciones), conjuntos de datos en Hugging Face e informe interactivo. C4 Alto: límites explícitos (modelos antiguos solo por API, tasas absolutas que cambian entre simuladores, 'proceso descriptivo'). C5 Medio: resultados e interpretación no siempre rotulados. Se declara 'organización sin ánimo de lucro independiente' con política de independencia enlazada, pero no lista financiadores y colaboró con OpenAI, Anthropic y Google DeepMind (datos y acceso privilegiados, con acuerdos legales): conflicto potencial, aviso aparte para Anthropic. Otra pieza (jailbreaking) no se pudo leer por un error de la herramienta.",
+      "legacy_review_status": "Fase 2: muestreo n=1"
+    },
+    {
+      "id": "S07",
+      "name": "AI Now Institute",
+      "kind": null,
+      "type": "Instituto de investigación",
+      "region": "EE. UU.",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://ainowinstitute.org",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 1,
+        "item_ids": [],
+        "c2": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[P] Página de financiación: sin financiación corporativa desde mediados de 2022; fundaciones; MacArthur 2M USD (oct 2025). Orientación declarada: incidencia política. Fase 2, n=1 + listado: 'Double Agents' (8 jul 2026): sin notas ni referencias visibles; nombra agentes de Anthropic y OpenAI sin citar fuentes primarias; la prueba técnica está en una entrada enlazada no leída; sin límites declarados; sin mención de financiación. Todo el listado se rotula 'Research', incluso un anuncio de cartera. Valores provisionales por la muestra mínima. Otras piezas recientes: 'Uber for Nursing Part II' (abr 2026), 'North Star Data Center Policy Toolkit' (abr 2026).",
+      "legacy_review_status": "Fase 2: muestreo n=1"
+    },
+    {
+      "id": "S08",
+      "name": "DAIR Institute",
+      "kind": null,
+      "type": "Instituto de investigación",
+      "region": "EE. UU.",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://www.dair-institute.org",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": null,
+        "item_ids": [],
+        "c2": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[S] Financiadores según prensa: Ford, MacArthur, Kapor Center, Open Society, Rockefeller; MacArthur 800k USD (2025). Antes proyecto de Code for Science and Society. Fase 2: las páginas de investigación y de prensa leídas no mencionan financiación ni transparencia; el listado no tiene fechas y la prensa es un recopilatorio de medios de terceros. No se leyó ninguna pieza propia, así que C2, C4 y C5 siguen NE. Declara misión de 'mitigar, frenar o eliminar daños de la IA' (orientación declarada: incidencia/investigación). Producción variada sin rótulos (paper, op-ed, zine, informe).",
+      "legacy_review_status": "Fase 2: muestreo pendiente (sin piezas)"
+    },
+    {
+      "id": "S09",
+      "name": "AlgorithmWatch",
+      "kind": null,
+      "type": "ONG / investigación",
+      "region": "Alemania / UE",
+      "languages": [
+        "EN",
+        "DE"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://algorithmwatch.org",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 2,
+        "item_ids": [],
+        "c2": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Bajo",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[P] Informe de transparencia 2022 (Initiative Transparente Zivilgesellschaft): Landecker, Mercator, Bosch, Schöpflin, ministerios alemanes. Dato de 2022 → revisar. Fase 2, n=2: 'The AI Climate Hoax' (1 jun 2026) y 'The AI Omnibus' (18 jun 2026, análisis conjunto con EDRi, Access Now, Amnesty y otros). Ambas listan hoy los apoyos (Landecker, Postcode Lotterie, Luminate, Mercator, Bosch, Schöpflin, Zeit y ministerios alemanes) pero no dicen si financiaron esa pieza; licencia CC BY 4.0. C2 Medio: cifras (26 % cita investigación publicada, 36 % ninguna evidencia) pero metodología no explicada y PDFs no leídos; Omnibus se apoya en textos legales sin otras fuentes. C4 Bajo: ninguna declara límites; 'deliberadamente' atribuye intención; 'debe ser contrarrestado urgentemente'. Puede deberse al género de incidencia declarada: pendiente decidir si C4 debe penalizarse en piezas de incidencia. C5 Medio: mezcla hechos comprobables y valoraciones.",
+      "legacy_review_status": "Fase 2: muestreo n=2"
+    },
+    {
+      "id": "S10",
+      "name": "Data & Society",
+      "kind": null,
+      "type": "Instituto de investigación",
+      "region": "EE. UU.",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://datasociety.net",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 2,
+        "item_ids": [],
+        "c2": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[P] Página de apoyos y declaración de independencia (contenido de la lista no leído). Subvenciones 2024 (Mellon, SVCF, Luminate) según terceros [S]. Fase 2, n=2: 'Policy Brief 404 Job Not Found' (feb 2026): 9 notas, entrevistas en Atlanta sin tamaño de muestra ni método, sin sección de límites, recomendaciones numeradas y separadas, sin financiadores nombrados. 'Last Place in the AI-First Economy' (primer, abr 2026): sin fuentes citadas en la página, tesis argumentativa, apoyo de W.K. Kellogg Foundation y Ford Foundation. La financiación se declara de forma desigual entre piezas. C2 Medio; C4 Medio (reconoce el foco en Atlanta pero sin discutir generalización); C5 Medio.",
+      "legacy_review_status": "Fase 2: muestreo n=2"
+    },
+    {
+      "id": "S11",
+      "name": "Ada Lovelace Institute",
+      "kind": null,
+      "type": "Instituto de investigación",
+      "region": "Reino Unido",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://www.adalovelaceinstitute.org",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": null,
+        "item_ids": [],
+        "c2": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[P] Página 'Nuestros financiadores' (sin fecha): Nuffield Foundation, financiador principal; AHRC, Luminate y Health Foundation, adicionales. Establecido por la Nuffield Foundation en 2018. Declara: 'nuestros socios y financiadores apoyan nuestra independencia del Gobierno'. C1 Medio hasta leer la página de equipo. Fecha de la información de financiación desconocida (ajuste 6).",
+      "legacy_review_status": "Fase 1: institucional verificada; muestreo pendiente"
+    },
+    {
+      "id": "S12",
+      "name": "Wired",
+      "kind": null,
+      "type": "Medio de comunicación",
+      "region": "EE. UU.",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "adyacente",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://www.wired.com",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 3,
+        "item_ids": [],
+        "c2": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[S] Nieman Lab (mar 2023): política de IA generativa: no publica texto generado por IA, trata el uso no declarado como plagio, sin imágenes de IA. [P] El pie de la página enlaza la política de privacidad de Condé Nast (pertenencia al grupo inferida, sin página corporativa leída). Fase 2 (Chrome), 3 piezas de la etiqueta 'Artificial Intelligence' (6–11 nov 2026): (1) Dave/Haskins, 11 nov, noticia sobre una demanda: atribuye todo lo no comprobado a la demanda ('según la demanda', 'alega'), recoge la respuesta de Google y de GoGuardian, indica que Gaggle no respondió, cita a un investigador de RAND, avisa de que un estudio citado estaba patrocinado por Gaggle y dice expresamente qué se desconoce → en esta pieza C2, C4 y C5 serían Alto. (2) Steven Levy, 6 nov: tras muro de pago solo se leyó el arranque (un correo de venta que menciona pagos de laboratorios de IA a medios como Wired); sin evaluar. (3) Goode, 'The Big Story', 10 nov: panel de 10 expertos con afiliación y rol de cada uno; el marco de la autora afirma hechos sin fuente visible en el texto (un incidente de agentes y declaraciones de investigadores) y el titular es editorializante, con lo que C2, C4 y C5 quedan Medio. Entre los panelistas hay personas de AI Now (S07) y de Transluce (S06): vínculo entre fuentes. C3 NE: no se leyó ninguna página de financiación; modelo comercial (publicidad y suscripción). Verificar acuerdos de licencia de contenido entre Condé Nast y empresas de IA [M, sin comprobar]: afectarían a un medio que cubre a esas empresas. Orientación declarada: periodismo.",
+      "legacy_review_status": "Fase 2: muestreo n=3 (1 sin leer por muro de pago)"
+    },
+    {
+      "id": "S13",
+      "name": "Import AI (Jack Clark)",
+      "kind": null,
+      "type": "Boletín",
+      "region": "EE. UU.",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://importai.substack.com",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 1,
+        "item_ids": [],
+        "c2": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[P] About de Import AI y jack-clark.net/about: Jack Clark, cofundador y Head of Policy de Anthropic; antes Policy Director de OpenAI; antes Bloomberg y The Register; miembro fundador del Stanford AI Index (2017–2024). Semanal, 'leído por 70.000 personas' (según él). Sin declaración de conflicto ni de independencia respecto a Anthropic; financiación: suscripción de pago opcional en Substack. Fase 2, n=1 (#443, 2 feb 2026): enlaza la fuente primaria en casi todos los ítems (informe de CSET, blog de Anthropic, dos papers de arXiv); estructura fija resumen / 'Why this matters' / 'Read more'; cubre con frecuencia con 'espero', 'sospecho', 'posiblemente'. C5 Medio: los resultados citan fuente pero el resumen mezcla acuerdo propio. La única declaración de conflicto vista es 'I work at Anthropic' en medio de un punto; el ítem sobre una entrevista a Anthropic no añade aviso. Revisar con especial cuidado (Claude es de Anthropic).",
+      "legacy_review_status": "Fase 2: muestreo n=1"
+    },
+    {
+      "id": "S14",
+      "name": "OpenAlex",
+      "kind": "infrastructure",
+      "type": "Infraestructura / índice",
+      "region": "EE. UU.",
+      "languages": [
+        "multilingüe"
+      ],
+      "relevance": "adyacente",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://openalex.org",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": null,
+        "item_ids": [],
+        "c2": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "Índice, no fuente de contenido. [P] Blog OpenAlex: subvención de Arcadia de 7,5 M USD a 5 años (13 mar 2024) y de 4,5 M USD en 2021; sostenibilidad futura vía servicios premium; datos y código con licencia abierta. Sin política de independencia leída. Verificar al construir si la clave API es obligatoria.",
+      "legacy_review_status": "Fase 1: institucional verificada; muestreo no aplica (índice)"
+    },
+    {
+      "id": "S15",
+      "name": "arXiv",
+      "kind": null,
+      "type": "Repositorio de preprints",
+      "region": "EE. UU.",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "adyacente",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://arxiv.org",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": null,
+        "item_ids": [],
+        "c2": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[P] About: gobernado por un Board of Directors; fundado por Paul Ginsparg en 1991; organización independiente sin ánimo de lucro desde 2026 (entrada de blog del 30 jun 2026), antes en Cornell. Financiada por Simons Foundation International, instituciones miembro y donantes. 'El material no es revisado por pares por arXiv'; moderación solo de tema y valor académico. C2, C4 y C5 dependen de cada preprint, no de la fuente.",
+      "legacy_review_status": "Fase 1: institucional verificada; calidad por pieza"
+    },
+    {
+      "id": "S16",
+      "name": "Stanford Encyclopedia of Philosophy",
+      "kind": null,
+      "type": "Enciclopedia académica",
+      "region": "EE. UU.",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "adyacente",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://plato.stanford.edu",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 1,
+        "item_ids": [],
+        "c2": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[P] About: entradas mantenidas por expertos y 'arbitradas por el Consejo Editorial' antes de publicarse; archivo trimestral citable e historial de cambios. Proyecto en el Departamento de Filosofía de Stanford desde sept 2021. Financiación: NEH, NSF, Mellon y Hewlett, más donación de O.C. Tanner en 2022. Fechas de cada subvención no leídas. No describe cómo se eligen autores. Fase 2 (Chrome), n=1: 'Ethics of Artificial Intelligence and Robotics' (publicada 30 abr 2020; revisión sustantiva 27 mar 2026): citas en el texto con bibliografía extensa; C4 Alto ('el alcance exacto del impacto no está claro', 'se mantiene cauteloso'; expone posiciones enfrentadas con atribución); C5 Medio: describe debates atribuidos pero intercala valoraciones propias del autor ('parece más un problema técnico'). Leído ~1/3 del texto (truncado).",
+      "legacy_review_status": "Fase 2: muestreo n=1"
+    },
+    {
+      "id": "S17",
+      "name": "ChinAI (Jeffrey Ding)",
+      "kind": null,
+      "type": "Boletín de traducciones (China)",
+      "region": "China → EN",
+      "languages": [
+        "EN (de ZH)"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://chinai.substack.com",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 2,
+        "item_ids": [],
+        "c2": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "Autor en GWU. Muestreo n=2 (#351, 16 mar 2026; #341, 5 ene 2026). C2 Alto: enlaza el original chino (WeChat) y la traducción completa. C4 Alto: admite lectura parcial ('solo leí la mitad del PDF de 40 páginas'), datos anonimizados y se corrige; sus predicciones se presentan como especulativas. C5 Medio: secciones separadas (Contexto, Claves) pero no siempre distingue traducción literal de paráfrasis; comentario propio mezclado. Traductor no nombrado (implícito: el autor); sin aviso sobre exactitud de la traducción. Semanal, 364+ números. Nivel 1 China.",
+      "legacy_review_status": "Fase 1: muestreo n=2"
+    },
+    {
+      "id": "S18",
+      "name": "DigiChina (Stanford)",
+      "kind": null,
+      "type": "Proyecto de traducción y análisis (China)",
+      "region": "EE. UU. / China",
+      "languages": [
+        "EN (de ZH)"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://digichina.stanford.edu",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 3,
+        "item_ids": [],
+        "c2": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "Editor Graham Webster. Financiación: Ford Foundation; antes Berkman Klein/MIT Media Lab. Fase 2, n=3: traducción de Xi Jinping (publicada nov 2018) y extractos del Libro Blanco de seguridad de IA de CAICT (feb 2019), ambas con enlace al original chino y bajo un encabezado TRANSLATION que separa el comentario editorial del texto traducido; la segunda marca las omisiones con […] y ofrece alternativas de traducción entre corchetes. Foro 'Technology in China's 15th Five-Year Plan' (17 mar 2026): casi todas las afirmaciones enlazan fuentes, pero algunas cifras sin método (52 menciones de IA) y enlaces débiles (Medium, X); contribuyentes con distinta cautela y sin confianza global. Las piezas de traducción son antiguas (2018–19): comprobar si el estándar se mantiene hoy. Ninguna pieza nombra traductor ni declara financiación propia. C2 Alto para traducciones, Medio para foros. Nivel 1 China.",
+      "legacy_review_status": "Fase 2: muestreo n=3"
+    },
+    {
+      "id": "S19",
+      "name": "Concordia AI",
+      "kind": null,
+      "type": "Organización de investigación",
+      "region": "China / internacional",
+      "languages": [
+        "EN",
+        "ZH"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://concordia-ai.com",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 1,
+        "item_ids": [],
+        "c2": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "CEO Brian Tse. Declara independencia de gobiernos; sin lista de financiadores. Muestreo n=1 y desfasado: entrada de oct 2023 sobre su primer informe (no la edición 2026). C2 Medio: cita pocas fuentes en la entrada y el informe (150+ páginas) no se leyó. C4 Alto: reconoce 'falta significativa de datos' en opinión pública y matiza hallazgos. C5 Medio: mezcla hecho, análisis y recomendaciones sin separar. Sin declaración de financiación del informe. Nivel 1 China.",
+      "legacy_review_status": "Fase 1: muestreo n=1 (2023)"
+    },
+    {
+      "id": "S20",
+      "name": "CSET (Georgetown)",
+      "kind": null,
+      "type": "Centro de investigación",
+      "region": "EE. UU.",
+      "languages": [
+        "EN"
+      ],
+      "relevance": "nucleo",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://cset.georgetown.edu",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 1,
+        "item_ids": [],
+        "c2": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "NE",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[P] Política de financiación: Open Philanthropy principal financiador (>100M USD). Aviso: dependencia de un único financiador. Muestreo n=1, una traducción (borrador chino de medidas de ética de IA, traducida 12 may 2026): enlaza la fuente (MIIT) y una copia archivada en perma.cc, 'nuestra traducción', notas del traductor y avisos de borrador y de versión final de abril 2026. C2 y C5 Alto solo para traducciones; C4 NE hasta leer un informe de investigación.",
+      "legacy_review_status": "Fase 1: muestreo n=1 (traducción)"
+    },
+    {
+      "id": "S21",
+      "name": "MERICS",
+      "kind": null,
+      "type": "Think tank sobre China",
+      "region": "Alemania / UE",
+      "languages": [
+        "EN",
+        "DE"
+      ],
+      "relevance": "adyacente",
+      "declared_orientation": null,
+      "parent_or_sponsor_org": null,
+      "ties_and_interests": [],
+      "url": "https://merics.org",
+      "feeds": [],
+      "institutional_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "c1": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c3": {
+          "value": "Alto",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": "",
+          "info_date": null
+        }
+      },
+      "sampling_evaluation": {
+        "date": "2026-11-12",
+        "rubric_version": "v0",
+        "n_items": 1,
+        "item_ids": [],
+        "c2": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c4": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        },
+        "c5": {
+          "value": "Medio",
+          "evidence_level": null,
+          "evidence_url": null,
+          "note": ""
+        }
+      },
+      "status": "propuesta",
+      "reviewed_by_human": false,
+      "legacy_evidence_notes": "[P] Transparencia anual: Stiftung Mercator 52,6 % del presupuesto 2024 (3,96 M€); gobierno alemán 500k€; sancionado por Pekín. Perspectiva europea. Muestreo n=1: China Essentials 'China in 2026' (27 nov 2025). C2 Medio: cita medios y algunas cifras, sin notas que enlacen cada dato. C4 Medio: desigual; escenarios explícitos solo en relaciones internacionales. C5 Medio: no etiqueta hechos, previsiones y opiniones; las opiniones van en citas.",
+      "legacy_review_status": "Fase 1: muestreo n=1"
+    }
+  ]
+}

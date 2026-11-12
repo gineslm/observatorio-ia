@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Correcciones humanas (data/gold-set/corrections.json)",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "required": ["id", "date", "target", "criterion", "initial_value", "corrected_value", "reason", "rubric_version"],
+    "additionalProperties": false,
+    "properties": {
+      "id": {"type": "string", "pattern": "^G-\\d{4}$"},
+      "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+      "target": {
+        "type": "object",
+        "required": ["type", "id"],
+        "additionalProperties": false,
+        "properties": {
+          "type": {"enum": ["source", "item"]},
+          "id": {"type": "string"}
+        }
+      },
+      "criterion": {"type": "string"},
+      "initial_value": {"type": ["string", "null"]},
+      "corrected_value": {"type": ["string", "null"]},
+      "reason": {"type": "string"},
+      "rubric_version": {"type": "string"}
+    }
+  }
+}

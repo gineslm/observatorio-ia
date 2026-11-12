@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Registro de fuentes (data/sources.json)",
+  "type": "object",
+  "required": ["schema_version", "rubric_version", "sources"],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {"const": "1.0"},
+    "rubric_version": {"type": "string"},
+    "note": {"type": "string"},
+    "sources": {"type": "array", "items": {"$ref": "#/$defs/source"}}
+  },
+  "$defs": {
+    "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+    "score": {"enum": ["Alto", "Medio", "Bajo", "NE"]},
+    "evidence_level": {"enum": ["P", "S", "M", "-", null], "description": "null = pendiente de asignar"},
+    "criterion": {
+      "type": "object",
+      "required": ["value", "evidence_level"],
+      "additionalProperties": false,
+      "properties": {
+        "value": {"$ref": "#/$defs/score"},
+        "evidence_level": {"$ref": "#/$defs/evidence_level"},
+        "evidence_url": {"type": ["string", "null"]},
+        "info_date": {"oneOf": [{"$ref": "#/$defs/date"}, {"type": "null"}]},
+        "note": {"type": "string"}
+      }
+    },
+    "source": {
+      "type": "object",
+      "required": ["id", "name", "kind", "url", "institutional_evaluation", "sampling_evaluation", "status", "reviewed_by_human"],
+      "additionalProperties": false,
+      "properties": {
+        "id": {"type": "string", "pattern": "^S\\d{2,}$"},
+        "name": {"type": "string", "minLength": 1},
+        "kind": {"enum": ["content_source", "infrastructure", null]},
+        "type": {"type": "string"},
+        "region": {"type": "string"},
+        "languages": {"type": "array", "items": {"type": "string"}},
+        "relevance": {"enum": ["nucleo", "adyacente"]},
+        "declared_orientation": {"type": ["string", "null"]},
+        "parent_or_sponsor_org": {"type": ["string", "null"]},
+        "ties_and_interests": {"type": "array", "items": {"type": "string"}},
+        "url": {"type": "string", "pattern": "^https?://"},
+        "feeds": {"type": "array", "items": {"type": "string"}},
+        "institutional_evaluation": {
+          "type": "object",
+          "required": ["date", "rubric_version", "c1", "c3"],
+          "additionalProperties": false,
+          "properties": {
+            "date": {"$ref": "#/$defs/date"},
+            "rubric_version": {"type": "string"},
+            "c1": {"$ref": "#/$defs/criterion"},
+            "c3": {"$ref": "#/$defs/criterion"}
+          }
+        },
+        "sampling_evaluation": {
+          "type": "object",
+          "required": ["date", "rubric_version", "n_items", "c2", "c4", "c5"],
+          "additionalProperties": false,
+          "properties": {
+            "date": {"$ref": "#/$defs/date"},
+            "rubric_version": {"type": "string"},
+            "n_items": {"type": ["integer", "null"], "minimum": 0},
+            "item_ids": {"type": "array", "items": {"type": "string"}},
+            "c2": {"$ref": "#/$defs/criterion"},
+            "c4": {"$ref": "#/$defs/criterion"},
+            "c5": {"$ref": "#/$defs/criterion"}
+          }
+        },
+        "status": {"enum": ["propuesta", "revisada"]},
+        "reviewed_by_human": {"type": "boolean"},
+        "legacy_evidence_notes": {"type": "string", "description": "Nota libre de la v0.1; repartir por criterio al revisar"},
+        "legacy_review_status": {"type": "string"}
+      }
+    }
+  }
+}
