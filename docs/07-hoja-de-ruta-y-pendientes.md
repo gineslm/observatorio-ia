@@ -37,7 +37,7 @@ Estado a 2026-11-12. El orden propuesto sigue las dependencias; las fases son or
 - [ ] Revisión técnica a las 50 piezas.
 
 ## Fase 4. Visualización
-- [ ] Página PHP que lee los JSON y muestra fuentes, piezas, evaluaciones y filtros.
+- [x] Página PHP que lee los JSON y muestra fuentes y evaluaciones con filtros (v0; piezas pendientes).
 - [ ] Decidir si se publica o se mantiene privado (el repo es público; la web, pendiente).
 
 ## Fase 5. Categorías

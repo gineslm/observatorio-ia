@@ -26,6 +26,7 @@ data/
 agent/                            espacio para el prompt/skill del agente
 schemas/                          JSON Schema de fuentes, piezas y correcciones
 scripts/validate.py               validación (ejecutar antes de cada commit)
+public/index.php                  visor PHP de solo lectura
 ```
 
 ## Primeros pasos en Claude Code
@@ -35,6 +36,14 @@ scripts/validate.py               validación (ejecutar antes de cada commit)
 3. Inicializar Git y crear el repo en GitHub. Pedir a Claude Code que explique cada comando antes de lanzarlo (por ejemplo `git init`, `git add`, `git commit` y `gh repo create`). Ninguno es destructivo, pero `gh repo create` crea algo en la cuenta de GitHub, así que debe confirmarse.
 4. Antes del primer commit, comprobar que no se incluye nada privado (ver `.gitignore`).
 5. Seguir `docs/07-hoja-de-ruta-y-pendientes.md`, fase 0.
+
+## Ver el registro
+
+```
+php -S 127.0.0.1:8000 -t public
+```
+
+Y abrir http://127.0.0.1:8000. Solo lectura: filtra por texto, relevancia y valor de criterio.
 
 ## Validar los datos
 
