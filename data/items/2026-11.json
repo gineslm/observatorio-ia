@@ -1,0 +1,428 @@
+[
+  {
+    "id": "P-2026-11-0001",
+    "source_id": "S09",
+    "url": "https://algorithmwatch.org/de/ki-in-der-migrationsverwaltung-keine-experimente-mit-den-daten-von-migrantinnen-und-klare-grenzen-fur-ki-systeme/",
+    "title": "KI in der Migrationsverwaltung: Keine Experimente mit den Daten von Migrant*innen und klare Grenzen für KI-Systeme",
+    "authors": [],
+    "published_at": "2026-10-15",
+    "captured_at": "2026-11-12",
+    "language": "de",
+    "original_language": "de",
+    "translated_from": null,
+    "content_type": null,
+    "source_keywords": [
+      "Positions",
+      "Datenschutz",
+      "Diskriminierung",
+      "Öffentliche Verwaltung",
+      "Polizeiarbeit"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://algorithmwatch.org/en/feed/"
+    },
+    "summary": "Documento de posición sobre el proyecto de ley alemán que regula el uso de IA en la administración de migraciones: señala riesgos para los datos de personas migrantes, oportunidades perdidas y propone cuatro recomendaciones.",
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0002",
+    "source_id": "S09",
+    "url": "https://algorithmwatch.org/de/entscheidungsbaum-generative-ki/",
+    "title": "Entscheidungsbaum: Dein Weg zu einem verantwortungsvollen Umgang mit Chatbots",
+    "authors": [
+      "Pia Grundmann"
+    ],
+    "published_at": "2026-10-13",
+    "captured_at": "2026-11-12",
+    "language": "de",
+    "original_language": "de",
+    "translated_from": null,
+    "content_type": null,
+    "source_keywords": [
+      "Publications",
+      "Chatbot",
+      "generative KI",
+      "Meinungsbildung",
+      "ZukunftD"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://algorithmwatch.org/en/feed/"
+    },
+    "summary": "Recurso divulgativo en forma de árbol de decisión para orientar un uso responsable de chatbots e IA generativa.",
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0003",
+    "source_id": "S09",
+    "url": "https://algorithmwatch.org/de/algorithmwatch-kritisiert-im-wirtschaftsausschuss-weniger-effizienz-bei-rechenzentren-kostet-die-wirtschaft-milliarden/",
+    "title": "AlgorithmWatch kritisiert im Wirtschaftsausschuss: Weniger Effizienz bei Rechenzentren kostet die Wirtschaft Milliarden",
+    "authors": [],
+    "published_at": "2026-10-02",
+    "captured_at": "2026-11-12",
+    "language": "de",
+    "original_language": "de",
+    "translated_from": null,
+    "content_type": null,
+    "source_keywords": [
+      "Press release",
+      "Energieeffizienz",
+      "Nachhaltigkeit",
+      "Rechenzentren"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://algorithmwatch.org/en/feed/"
+    },
+    "summary": "Nota sobre la comparecencia de AlgorithmWatch ante el comité de economía del Bundestag: rebajar los requisitos de eficiencia de los centros de datos en la reforma de la ley de eficiencia energética encarecería la economía y alargaría la dependencia fósil, según un estudio propio con dos institutos.",
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0004",
+    "source_id": "S09",
+    "url": "https://algorithmwatch.org/de/verschlechterungen-von-effizienzstandards-bei-rechenzentren-fuhren-zu-zusatzlichen-energiebedarfen/",
+    "title": "Studie: Verschlechterungen von Effizienzstandards bei Rechenzentren führen zu sehr großen zusätzlichen Energiebedarfen",
+    "authors": [
+      "Dr. Julian Bothe"
+    ],
+    "published_at": "2026-10-02",
+    "captured_at": "2026-11-12",
+    "language": "de",
+    "original_language": "de",
+    "translated_from": null,
+    "content_type": null,
+    "source_keywords": [
+      "Publications",
+      "Energieeffizienz",
+      "Nachhaltigkeit",
+      "Rechenzentren"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://algorithmwatch.org/en/feed/"
+    },
+    "summary": "Estudio que estima, con un cálculo sencillo y suponiendo fuerte crecimiento, que incluso pequeñas rebajas de los estándares de eficiencia de los centros de datos dispararían la demanda de electricidad y calor hacia 2045.",
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0005",
+    "source_id": "S17",
+    "url": "https://chinai.substack.com/p/chinai-381-chinas-venture-capital",
+    "title": "ChinAI #381: China’s Venture Capital Market is Defying Common Sense",
+    "authors": [
+      "Jeffrey Ding"
+    ],
+    "published_at": "2026-11-09",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://chinai.substack.com/feed"
+    },
+    "summary": "Número del boletín que presenta, traducido y comentado, el análisis crítico de un observador veterano sobre el comportamiento anómalo del capital riesgo en China.",
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0006",
+    "source_id": "S17",
+    "url": "https://chinai.substack.com/p/chinai-380-its-getting-more-and-more",
+    "title": "ChinAI #380: It’s getting more and more difficult to make money",
+    "authors": [
+      "Jeffrey Ding"
+    ],
+    "published_at": "2026-11-02",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://chinai.substack.com/feed"
+    },
+    "summary": null,
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0007",
+    "source_id": "S17",
+    "url": "https://chinai.substack.com/p/chinai-379-chinese-ai-can-only-make",
+    "title": "ChinAI #379: “Chinese AI only makes trash TV?”",
+    "authors": [
+      "Jeffrey Ding"
+    ],
+    "published_at": "2026-10-26",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://chinai.substack.com/feed"
+    },
+    "summary": null,
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0008",
+    "source_id": "S17",
+    "url": "https://chinai.substack.com/p/chinai-378-chinas-two-day-weekend",
+    "title": "ChinAI #378: China’s Two-day Weekend Defenders",
+    "authors": [
+      "Jeffrey Ding"
+    ],
+    "published_at": "2026-10-19",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://chinai.substack.com/feed"
+    },
+    "summary": null,
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0009",
+    "source_id": "S07",
+    "url": "https://ainowinstitute.org/news/the-ai-safety-debate-has-lost-the-plot-we-asked-10-experts-what-the-real-nightmares-are",
+    "title": "The AI Safety Debate Has Lost the Plot. We Asked 10 Experts What the Real Nightmares Are",
+    "authors": [
+      "AI Now Institute"
+    ],
+    "published_at": "2026-11-10",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": null,
+    "source_keywords": [
+      "News",
+      "Press"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://ainowinstitute.org/feed"
+    },
+    "summary": "Encuesta a diez especialistas sobre los riesgos reales de la IA; la científica jefe de AI Now separa preocupaciones fundadas de afirmaciones de extinción sin respaldo y reivindica las disciplinas establecidas de evaluación de riesgos.",
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0010",
+    "source_id": "S07",
+    "url": "https://ainowinstitute.org/news/palantir-hires-a-former-democratic-senator-as-it-faces-scrutiny-in-new-congress",
+    "title": "Palantir hires a former Democratic senator as it faces scrutiny in new Congress",
+    "authors": [
+      "AI Now Institute"
+    ],
+    "published_at": "2026-11-09",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": null,
+    "source_keywords": [
+      "News",
+      "Press"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://ainowinstitute.org/feed"
+    },
+    "summary": "Pieza de prensa sobre la contratación de un exsenador demócrata por Palantir ante el escrutinio del nuevo Congreso; AI Now aporta la lectura de que las tecnológicas buscan mejorar su reputación y eludir la rendición de cuentas.",
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0011",
+    "source_id": "S07",
+    "url": "https://ainowinstitute.org/news/2026-election-breakdown-americans-vote-down-data-centers-ai-and-oligarchy",
+    "title": "2026 election breakdown: Americans vote down data centers, AI and oligarchy",
+    "authors": [
+      "AI Now Institute"
+    ],
+    "published_at": "2026-11-06",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": null,
+    "source_keywords": [
+      "News",
+      "Press"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://ainowinstitute.org/feed"
+    },
+    "summary": "Mesa redonda sobre lo que las elecciones de 2026 en EE. UU. implican para la IA, los centros de datos y la industria tecnológica, con participación de AI Now.",
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0012",
+    "source_id": "S07",
+    "url": "https://ainowinstitute.org/news/openai-is-already-trying-to-shape-the-2028-election",
+    "title": "OpenAI is already trying to shape the 2028 election",
+    "authors": [
+      "AI Now Institute"
+    ],
+    "published_at": "2026-11-04",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": null,
+    "source_keywords": [
+      "News",
+      "Press"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://ainowinstitute.org/feed"
+    },
+    "summary": "Reacción de AI Now a un ensayo del responsable de asuntos globales de OpenAI: lo interpreta como incidencia política en beneficio propio con vistas a las elecciones de 2028.",
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  }
+]
