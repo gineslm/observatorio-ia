@@ -30,7 +30,8 @@
         "language": {"type": ["string", "null"]},
         "original_language": {"type": ["string", "null"]},
         "translated_from": {"type": ["string", "null"]},
-        "content_type": {"enum": ["noticia", "informe", "analisis", "opinion", "traduccion", "dataset", "otro"]},
+        "content_type": {"enum": ["noticia", "informe", "analisis", "opinion", "traduccion", "dataset", "otro", null], "description": "null = pendiente"},
+        "source_keywords": {"type": "array", "items": {"type": "string"}, "description": "Palabras clave declaradas por la propia fuente (categorías RSS, keywords). No es taxonomía propia."},
         "entry_reason": {
           "type": "object",
           "required": ["channel"],
@@ -40,7 +41,7 @@
             "detail": {"type": "string"}
           }
         },
-        "summary": {"type": "string", "minLength": 1},
+        "summary": {"type": ["string", "null"], "description": "Resumen propio; null = pendiente. Nunca copiar el extracto del RSS."},
         "argues": {"type": "string"},
         "quality": {
           "type": "object",

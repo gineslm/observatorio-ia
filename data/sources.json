@@ -6,7 +6,8 @@
     {
       "id": "S01",
       "name": "OECD.AI Policy Observatory",
-      "kind": null,
+      "summary": "Plataforma de la OCDE que reúne políticas nacionales de IA, indicadores y un monitor de incidentes generado de forma semiautomática.",
+      "kind": "infrastructure",
       "type": "Observatorio / base de datos",
       "region": "Internacional (OCDE)",
       "languages": [
@@ -68,7 +69,8 @@
     {
       "id": "S02",
       "name": "AI Incident Database (Responsible AI Collaborative)",
-      "kind": null,
+      "summary": "Base de datos colaborativa de incidentes en los que sistemas de IA causaron o casi causaron daños, con informes enlazados.",
+      "kind": "infrastructure",
       "type": "Base de datos colaborativa",
       "region": "EE. UU.",
       "languages": [
@@ -129,7 +131,8 @@
     {
       "id": "S03",
       "name": "AIAAIC Repository",
-      "kind": null,
+      "summary": "Repositorio independiente de incidentes y controversias relacionados con IA, algoritmos y automatización.",
+      "kind": "infrastructure",
       "type": "Base de datos / repositorio",
       "region": "Internacional",
       "languages": [
@@ -190,7 +193,8 @@
     {
       "id": "S04",
       "name": "AI Governance Database (Seattle U)",
-      "kind": null,
+      "summary": "Base de datos académica que recopila instrumentos de gobernanza de la IA (leyes, políticas y marcos).",
+      "kind": "infrastructure",
       "type": "Base de datos académica",
       "region": "EE. UU.",
       "languages": [
@@ -251,7 +255,8 @@
     {
       "id": "S05",
       "name": "Stanford AI Index (HAI)",
-      "kind": null,
+      "summary": "Informe anual del instituto HAI de Stanford con datos sobre investigación, economía, política y adopción de la IA.",
+      "kind": "content_source",
       "type": "Informe anual / datos",
       "region": "EE. UU.",
       "languages": [
@@ -312,7 +317,8 @@
     {
       "id": "S06",
       "name": "Transluce",
-      "kind": null,
+      "summary": "Laboratorio sin ánimo de lucro que desarrolla herramientas abiertas para entender y supervisar sistemas de IA.",
+      "kind": "content_source",
       "type": "Laboratorio de investigación sin ánimo de lucro",
       "region": "EE. UU.",
       "languages": [
@@ -373,7 +379,8 @@
     {
       "id": "S07",
       "name": "AI Now Institute",
-      "kind": null,
+      "summary": "Instituto que investiga el poder de la industria de la IA y sus efectos sociales, con propuestas de política pública.",
+      "kind": "content_source",
       "type": "Instituto de investigación",
       "region": "EE. UU.",
       "languages": [
@@ -384,7 +391,9 @@
       "parent_or_sponsor_org": null,
       "ties_and_interests": [],
       "url": "https://ainowinstitute.org",
-      "feeds": [],
+      "feeds": [
+        "https://ainowinstitute.org/feed"
+      ],
       "institutional_evaluation": {
         "date": "2026-11-12",
         "rubric_version": "v0",
@@ -434,7 +443,8 @@
     {
       "id": "S08",
       "name": "DAIR Institute",
-      "kind": null,
+      "summary": "Instituto de investigación comunitario centrado en los daños de la IA y en alternativas desde perspectivas no dominantes.",
+      "kind": "content_source",
       "type": "Instituto de investigación",
       "region": "EE. UU.",
       "languages": [
@@ -495,7 +505,8 @@
     {
       "id": "S09",
       "name": "AlgorithmWatch",
-      "kind": null,
+      "summary": "ONG europea que investiga y documenta el impacto de los sistemas de decisión automatizada sobre la sociedad.",
+      "kind": "content_source",
       "type": "ONG / investigación",
       "region": "Alemania / UE",
       "languages": [
@@ -507,7 +518,9 @@
       "parent_or_sponsor_org": null,
       "ties_and_interests": [],
       "url": "https://algorithmwatch.org",
-      "feeds": [],
+      "feeds": [
+        "https://algorithmwatch.org/en/feed/"
+      ],
       "institutional_evaluation": {
         "date": "2026-11-12",
         "rubric_version": "v0",
@@ -557,7 +570,8 @@
     {
       "id": "S10",
       "name": "Data & Society",
-      "kind": null,
+      "summary": "Instituto que estudia las consecuencias sociales y culturales de las tecnologías basadas en datos.",
+      "kind": "content_source",
       "type": "Instituto de investigación",
       "region": "EE. UU.",
       "languages": [
@@ -618,7 +632,8 @@
     {
       "id": "S11",
       "name": "Ada Lovelace Institute",
-      "kind": null,
+      "summary": "Instituto británico que investiga cómo hacer que los datos y la IA funcionen en beneficio de las personas y la sociedad.",
+      "kind": "content_source",
       "type": "Instituto de investigación",
       "region": "Reino Unido",
       "languages": [
@@ -679,7 +694,8 @@
     {
       "id": "S12",
       "name": "Wired",
-      "kind": null,
+      "summary": "Revista de tecnología con información y reportajes sobre IA, industria y cultura digital.",
+      "kind": "content_source",
       "type": "Medio de comunicación",
       "region": "EE. UU.",
       "languages": [
@@ -740,7 +756,8 @@
     {
       "id": "S13",
       "name": "Import AI (Jack Clark)",
-      "kind": null,
+      "summary": "Boletín semanal que comenta investigación reciente en IA; su autor es cofundador de Anthropic.",
+      "kind": "content_source",
       "type": "Boletín",
       "region": "EE. UU.",
       "languages": [
@@ -801,6 +818,7 @@
     {
       "id": "S14",
       "name": "OpenAlex",
+      "summary": "Índice abierto de publicaciones científicas, autores e instituciones, con API gratuita.",
       "kind": "infrastructure",
       "type": "Infraestructura / índice",
       "region": "EE. UU.",
@@ -862,7 +880,8 @@
     {
       "id": "S15",
       "name": "arXiv",
-      "kind": null,
+      "summary": "Repositorio abierto de preprints científicos, sin revisión por pares, central en investigación de IA.",
+      "kind": "infrastructure",
       "type": "Repositorio de preprints",
       "region": "EE. UU.",
       "languages": [
@@ -923,7 +942,8 @@
     {
       "id": "S16",
       "name": "Stanford Encyclopedia of Philosophy",
-      "kind": null,
+      "summary": "Enciclopedia académica de filosofía con entradas revisadas por especialistas, incluidas las de ética e IA.",
+      "kind": "content_source",
       "type": "Enciclopedia académica",
       "region": "EE. UU.",
       "languages": [
@@ -984,7 +1004,8 @@
     {
       "id": "S17",
       "name": "ChinAI (Jeffrey Ding)",
-      "kind": null,
+      "summary": "Boletín que traduce y comenta textos chinos sobre IA para un público angloparlante.",
+      "kind": "content_source",
       "type": "Boletín de traducciones (China)",
       "region": "China → EN",
       "languages": [
@@ -995,7 +1016,9 @@
       "parent_or_sponsor_org": null,
       "ties_and_interests": [],
       "url": "https://chinai.substack.com",
-      "feeds": [],
+      "feeds": [
+        "https://chinai.substack.com/feed"
+      ],
       "institutional_evaluation": {
         "date": "2026-11-12",
         "rubric_version": "v0",
@@ -1045,7 +1068,8 @@
     {
       "id": "S18",
       "name": "DigiChina (Stanford)",
-      "kind": null,
+      "summary": "Proyecto de Stanford que traduce y analiza documentos de política tecnológica china.",
+      "kind": "content_source",
       "type": "Proyecto de traducción y análisis (China)",
       "region": "EE. UU. / China",
       "languages": [
@@ -1106,7 +1130,8 @@
     {
       "id": "S19",
       "name": "Concordia AI",
-      "kind": null,
+      "summary": "Organización con sede en Pekín dedicada a la seguridad y gobernanza de la IA y al diálogo internacional.",
+      "kind": "content_source",
       "type": "Organización de investigación",
       "region": "China / internacional",
       "languages": [
@@ -1168,7 +1193,8 @@
     {
       "id": "S20",
       "name": "CSET (Georgetown)",
-      "kind": null,
+      "summary": "Centro de la Universidad de Georgetown que analiza la seguridad nacional y la política de tecnologías emergentes.",
+      "kind": "content_source",
       "type": "Centro de investigación",
       "region": "EE. UU.",
       "languages": [
@@ -1229,7 +1255,8 @@
     {
       "id": "S21",
       "name": "MERICS",
-      "kind": null,
+      "summary": "Think tank europeo especializado en China, con análisis sobre su política tecnológica e industrial.",
+      "kind": "content_source",
       "type": "Think tank sobre China",
       "region": "Alemania / UE",
       "languages": [

@@ -33,6 +33,7 @@
       "properties": {
         "id": {"type": "string", "pattern": "^S\\d{2,}$"},
         "name": {"type": "string", "minLength": 1},
+        "summary": {"type": ["string", "null"], "description": "Descripción breve con palabras propias"},
         "kind": {"enum": ["content_source", "infrastructure", null]},
         "type": {"type": "string"},
         "region": {"type": "string"},
