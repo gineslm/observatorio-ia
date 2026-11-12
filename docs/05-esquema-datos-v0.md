@@ -125,3 +125,10 @@ Migración: convertir las 21 entradas planas de `sources.json` al esquema objeti
 - Cómo almacenar ficheros grandes (PDF): no versionar PDF ni texto completo ajeno; guardar solo enlace y resumen propio.
 - Formato de fechas: ISO 8601.
 - Si se añaden más campos de literatura gris tomados del NHS Grey Literature MDS (tipo de documento, institución emisora, serie, ISBN/ISSN).
+
+## Internacionalización (implementado, 2026-11-12)
+- El esquema vigente está en `schemas/*.schema.json`; este documento es la propuesta inicial.
+- Piezas: `title` y `source_keywords` guardan el original. Los textos que se muestran van en `i18n.es` e `i18n.en` (`title`, `summary`, `keywords`). `summary` siempre con palabras propias; `null` = pendiente.
+- Fuentes: `i18n.es.summary` e `i18n.en` (`summary`, `type`, `region`). Los campos base `type` y `region` están en castellano.
+- Las notas de evaluación (`legacy_evidence_notes`) solo existen en castellano.
+- Textos de interfaz: `public/lang/es.php` y `public/lang/en.php`.

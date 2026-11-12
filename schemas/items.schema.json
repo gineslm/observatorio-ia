@@ -5,6 +5,16 @@
   "items": {"$ref": "#/$defs/item"},
   "$defs": {
     "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"},
+    "texts": {
+      "type": "object",
+      "required": ["title", "summary", "keywords"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {"type": ["string", "null"], "description": "null = traducción pendiente"},
+        "summary": {"type": ["string", "null"], "description": "Resumen propio; null = pendiente. Nunca copiar el extracto del RSS."},
+        "keywords": {"type": "array", "items": {"type": "string"}, "description": "Traducción de source_keywords en el mismo orden"}
+      }
+    },
     "criterion": {
       "type": "object",
       "required": ["value", "evidence_level"],
@@ -17,14 +27,13 @@
     },
     "item": {
       "type": "object",
-      "required": ["id", "source_id", "url", "title", "captured_at", "content_type", "entry_reason", "summary", "review", "labels"],
+      "required": ["id", "source_id", "url", "title", "captured_at", "content_type", "entry_reason", "i18n", "review", "labels"],
       "additionalProperties": false,
       "properties": {
         "id": {"type": "string", "pattern": "^P-\\d{4}-\\d{2}-\\d{4}$"},
         "source_id": {"type": "string", "pattern": "^S\\d{2,}$"},
         "url": {"type": "string", "pattern": "^https?://"},
         "title": {"type": "string", "minLength": 1, "description": "Título original"},
-        "title_es": {"type": ["string", "null"], "description": "Traducción del título al castellano; null = pendiente"},
         "authors": {"type": "array", "items": {"type": "string"}},
         "published_at": {"oneOf": [{"$ref": "#/$defs/date"}, {"type": "null"}]},
         "captured_at": {"$ref": "#/$defs/date"},
@@ -33,7 +42,13 @@
         "translated_from": {"type": ["string", "null"]},
         "content_type": {"enum": ["noticia", "informe", "analisis", "opinion", "traduccion", "dataset", "otro", null], "description": "null = pendiente"},
         "source_keywords": {"type": "array", "items": {"type": "string"}, "description": "Palabras clave declaradas por la propia fuente (categorías RSS, keywords). No es taxonomía propia."},
-        "source_keywords_es": {"type": "array", "items": {"type": "string"}, "description": "Traducción al castellano de source_keywords, en el mismo orden"},
+        "i18n": {
+          "type": "object",
+          "required": ["es", "en"],
+          "additionalProperties": false,
+          "description": "Textos mostrados por idioma. Resúmenes con palabras propias; títulos y keywords, traducción fiel.",
+          "properties": {"es": {"$ref": "#/$defs/texts"}, "en": {"$ref": "#/$defs/texts"}}
+        },
         "entry_reason": {
           "type": "object",
           "required": ["channel"],
@@ -43,7 +58,6 @@
             "detail": {"type": "string"}
           }
         },
-        "summary": {"type": ["string", "null"], "description": "Resumen propio; null = pendiente. Nunca copiar el extracto del RSS."},
         "argues": {"type": "string"},
         "quality": {
           "type": "object",

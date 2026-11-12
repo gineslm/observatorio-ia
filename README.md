@@ -44,7 +44,7 @@ scripts/fetch_feeds.py            captura de feeds RSS/Atom
 php -S 127.0.0.1:8000 -t public
 ```
 
-Abrir http://127.0.0.1:8000. Tres páginas de solo lectura con el mismo componente de card:
+Abrir http://127.0.0.1:8000. Interfaz en castellano o inglés (selector ES/EN en la cabecera). Tres páginas de solo lectura con el mismo componente de card:
 - **Tablero** (`index.php`): piezas capturadas, buscador y filtros por fuente, idioma y keyword.
 - **Fuentes** (`fuentes.php`): fuentes de contenido con su valoración C1–C5.
 - **Recursos** (`recursos.php`): herramientas, bases de datos e índices (`kind: infrastructure`).

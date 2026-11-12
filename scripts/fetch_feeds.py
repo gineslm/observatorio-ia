@@ -98,7 +98,8 @@ def main():
     for f in items_dir.glob("*.json"):
         all_items[f.name] = json.loads(f.read_text(encoding="utf-8"))
     known = {it["url"] for lst in all_items.values() for it in lst}
-    pending = {it["url"] for lst in all_items.values() for it in lst if not it.get("summary")}
+    pending = {it["url"] for lst in all_items.values() for it in lst
+               if not all(it.get("i18n", {}).get(l, {}).get("summary") for l in ("es", "en"))}
 
     today = date.today()
     month_file = f"{today:%Y-%m}.json"
@@ -128,7 +129,6 @@ def main():
                     "source_id": s["id"],
                     "url": e["url"],
                     "title": e["title"],
-                    "title_es": e["title"] if e["language"] == "es" else None,
                     "authors": e["authors"],
                     "published_at": e["published_at"],
                     "captured_at": today.isoformat(),
@@ -137,9 +137,16 @@ def main():
                     "translated_from": None,
                     "content_type": None,
                     "source_keywords": e["keywords"],
-                    "source_keywords_es": e["keywords"] if e["language"] == "es" else [],
+                    # Textos por idioma: si el original ya está en es/en se copia el título y las keywords.
+                    "i18n": {
+                        lng: {
+                            "title": e["title"] if e["language"] == lng else None,
+                            "summary": None,
+                            "keywords": e["keywords"] if e["language"] == lng else [],
+                        }
+                        for lng in ("es", "en")
+                    },
                     "entry_reason": {"channel": "feed", "detail": feed},
-                    "summary": None,
                     "argues": "",
                     "identifiers": {"doi": None, "arxiv": None, "openalex": None},
                     "links_to_primary": [],
