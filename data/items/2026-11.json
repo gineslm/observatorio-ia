@@ -250,7 +250,7 @@
     "language": "en",
     "original_language": "en",
     "translated_from": null,
-    "content_type": null,
+    "content_type": "traduccion",
     "source_keywords": [],
     "i18n": {
       "es": {
@@ -294,17 +294,17 @@
     "language": "en",
     "original_language": "en",
     "translated_from": null,
-    "content_type": null,
+    "content_type": "traduccion",
     "source_keywords": [],
     "i18n": {
       "es": {
         "title": "ChinAI #380: cada vez es más difícil ganar dinero",
-        "summary": null,
+        "summary": "Traduce un ensayo viral de una plataforma china de divulgación financiera: con el inmobiliario, internet y la exportación ya sin empuje, la economía se vuelve de suma cero y ganar dinero cuesta más. Ding contextualiza con datos de menor crecimiento y paro juvenil superior al 20 % y ve poco convincentes los consejos individuales del texto, incluida la IA como salida.",
         "keywords": []
       },
       "en": {
         "title": "ChinAI #380: It’s getting more and more difficult to make money",
-        "summary": null,
+        "summary": "Translates a viral essay from a Chinese finance-explainer platform: with real estate, the internet and exports losing steam, the economy turns zero-sum and making money gets harder. Ding adds context on slowing growth and youth unemployment above 20% and finds the essay’s individual advice, including AI as a way out, unconvincing.",
         "keywords": []
       }
     },
@@ -338,17 +338,17 @@
     "language": "en",
     "original_language": "en",
     "translated_from": null,
-    "content_type": null,
+    "content_type": "traduccion",
     "source_keywords": [],
     "i18n": {
       "es": {
         "title": "ChinAI #379: «¿La IA china solo produce telebasura?»",
-        "summary": null,
+        "summary": "Analiza el bulo de que más de la mitad de la capacidad de cómputo china se dedica a generar series cortas de baja calidad. Traduce un comentario de Banyuetan (vinculada a Xinhua) que explica que contar tokens no equivale a medir cómputo y que las cifras de China y EE. UU. no son comparables; Ding lo relaciona con las percepciones erróneas mutuas en la rivalidad tecnológica.",
         "keywords": []
       },
       "en": {
         "title": "ChinAI #379: “Chinese AI only makes trash TV?”",
-        "summary": null,
+        "summary": "Examines the viral claim that over half of China’s computing power goes to low-quality AI short dramas. It translates a Banyuetan (Xinhua-affiliated) commentary explaining that token counts are not a measure of compute and that Chinese and US figures are not comparable; Ding links it to mutual misperceptions in the tech rivalry.",
         "keywords": []
       }
     },
@@ -382,17 +382,17 @@
     "language": "en",
     "original_language": "en",
     "translated_from": null,
-    "content_type": null,
+    "content_type": "traduccion",
     "source_keywords": [],
     "i18n": {
       "es": {
         "title": "ChinAI #378: los defensores chinos del fin de semana de dos días",
-        "summary": null,
+        "summary": "Traduce un reportaje sobre jóvenes chinos que rechazan empleos con semanas de seis días, frente a la cultura «996»: una responsable de selección comprueba que los candidatos declinan ofertas sin fin de semana completo. Se apoya en encuestas que sitúan la conciliación como prioridad de las nuevas generaciones y en un grupo en redes que defiende los dos días libres.",
         "keywords": []
       },
       "en": {
         "title": "ChinAI #378: China’s Two-day Weekend Defenders",
-        "summary": null,
+        "summary": "Translates a feature on young Chinese workers turning down jobs with six-day weeks, against the “996” culture: a recruiter finds candidates declining offers without a full weekend. It draws on surveys ranking work-life balance as a top priority for younger generations and on an online group defending two days off.",
         "keywords": []
       }
     },
