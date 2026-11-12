@@ -26,7 +26,8 @@ data/
 agent/                            espacio para el prompt/skill del agente
 schemas/                          JSON Schema de fuentes, piezas y correcciones
 scripts/validate.py               validación (ejecutar antes de cada commit)
-public/index.php                  visor PHP de solo lectura
+public/                           portal PHP de solo lectura (tablero, fuentes, recursos)
+scripts/fetch_feeds.py            captura de feeds RSS/Atom
 ```
 
 ## Primeros pasos en Claude Code
@@ -37,13 +38,24 @@ public/index.php                  visor PHP de solo lectura
 4. Antes del primer commit, comprobar que no se incluye nada privado (ver `.gitignore`).
 5. Seguir `docs/07-hoja-de-ruta-y-pendientes.md`, fase 0.
 
-## Ver el registro
+## Ver el portal
 
 ```
 php -S 127.0.0.1:8000 -t public
 ```
 
-Y abrir http://127.0.0.1:8000. Solo lectura: filtra por texto, relevancia y valor de criterio.
+Abrir http://127.0.0.1:8000. Tres páginas de solo lectura con el mismo componente de card:
+- **Tablero** (`index.php`): piezas capturadas, buscador y filtros por fuente, idioma y keyword.
+- **Fuentes** (`fuentes.php`): fuentes de contenido con su valoración C1–C5.
+- **Recursos** (`recursos.php`): herramientas, bases de datos e índices (`kind: infrastructure`).
+
+## Capturar piezas
+
+```
+.venv/Scripts/python scripts/fetch_feeds.py --limit 5 --excerpts
+```
+
+Lee los feeds de `data/sources.json` y añade a `data/items/AAAA-MM.json` solo metadatos y keywords declaradas por la fuente. El resumen queda en `null` hasta escribirlo con palabras propias. La tarea semanal automatizada está en `agent/tarea-semanal.md`.
 
 ## Validar los datos
 

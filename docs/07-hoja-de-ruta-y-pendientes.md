@@ -25,7 +25,9 @@ Estado a 2026-11-12. El orden propuesto sigue las dependencias; las fases son or
 - [ ] Añadir 6 a 10 fuentes nuevas: en español, catalán, del Sur Global y de calidad dudosa para probar la rúbrica.
 
 ## Fase 2. Ingesta
-- [ ] Escribir un lector de feeds RSS/Atom y de APIs (OpenAlex) en un script simple.
+- [x] Escribir un lector de feeds RSS/Atom (`scripts/fetch_feeds.py`). OpenAlex pendiente.
+- [x] Feeds activos: AlgorithmWatch, AI Now, ChinAI. Data & Society tiene feed vacío; MERICS y DAIR sin feed en la ruta estándar.
+- [ ] Revisar el feed de AlgorithmWatch: /en/feed/ devuelve piezas en alemán.
 - [ ] Probar con 3 a 5 fuentes, incluida una china de nivel 2 (CAICT o TC260) con traducción automática y marcar su calidad.
 - [ ] Probar WeChat (se espera que no sea automatizable).
 - [ ] Resolver el acceso a webs bloqueadas (Wired, AIAAIC, etc.): RSS, API, navegador o lectura manual.
@@ -33,11 +35,11 @@ Estado a 2026-11-12. El orden propuesto sigue las dependencias; las fases son or
 
 ## Fase 3. Ciclo semanal
 - [ ] Primera captura. Contar piezas desde ese día (los disparadores empiezan aquí).
-- [ ] Informe semanal del agente y día de revisión humana.
+- [ ] Programar en Claude Desktop la tarea de `agent/tarea-semanal.md` y fijar el día de revisión humana.
 - [ ] Revisión técnica a las 50 piezas.
 
 ## Fase 4. Visualización
-- [x] Página PHP que lee los JSON y muestra fuentes y evaluaciones con filtros (v0; piezas pendientes).
+- [x] Portal PHP v0: tablero de piezas, fuentes y recursos, con cards y filtros.
 - [ ] Decidir si se publica o se mantiene privado (el repo es público; la web, pendiente).
 
 ## Fase 5. Categorías
