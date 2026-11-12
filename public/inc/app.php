@@ -5,6 +5,17 @@ declare(strict_types=1);
 const DATA_DIR = __DIR__ . '/../../data';
 const CRITERIA = ['c1' => 'Autoría', 'c2' => 'Verificabilidad', 'c3' => 'Financiación', 'c4' => 'Incertidumbre', 'c5' => 'Hecho/opinión'];
 
+const LANGS = ['es' => 'castellano', 'en' => 'inglés', 'de' => 'alemán', 'fr' => 'francés', 'it' => 'italiano', 'zh' => 'chino', 'ca' => 'catalán', 'pt' => 'portugués'];
+
+function lang_name(?string $code): string { return LANGS[$code ?? ''] ?? (string)$code; }
+
+/** Keywords de una pieza en castellano si existen, si no las originales. */
+function item_keywords(array $it): array {
+    $orig = $it['source_keywords'] ?? [];
+    $es = $it['source_keywords_es'] ?? [];
+    return count($es) === count($orig) && $es ? $es : $orig;
+}
+
 function e(?string $s): string { return htmlspecialchars($s ?? '', ENT_QUOTES, 'UTF-8'); }
 
 function q(string $k): string { return trim((string)($_GET[$k] ?? '')); }
@@ -49,7 +60,7 @@ function contains(string $haystack, string $needle): bool {
 function card(array $c): void { ?>
   <article class="card">
     <div class="origin"><?= e($c['origin'] ?? '') ?></div>
-    <h3><a href="<?= e($c['url']) ?>" target="_blank" rel="noopener"><?= e($c['title']) ?></a></h3>
+    <h3><a href="<?= e($c['url']) ?>" target="_blank" rel="noopener"<?= !empty($c['title_original']) ? ' title="Título original: ' . e($c['title_original']) . '"' : '' ?>><?= e($c['title']) ?></a></h3>
     <?php if (!empty($c['meta'])): ?><div class="meta"><?= e(implode(' · ', array_filter($c['meta']))) ?></div><?php endif; ?>
     <?php if (!empty($c['summary'])): ?>
       <p class="summary"><?= e($c['summary']) ?></p>

@@ -8,8 +8,9 @@ $fq = q('q'); $ff = q('fuente'); $fl = q('idioma'); $fk = q('kw');
 
 $filtered = array_filter($items, function ($it) use ($sources, $fq, $ff, $fl, $fk) {
     $src = $sources[$it['source_id']]['name'] ?? '';
-    $kws = $it['source_keywords'] ?? [];
-    if (!contains($it['title'] . ' ' . ($it['summary'] ?? '') . ' ' . $src . ' ' . implode(' ', $kws), $fq)) return false;
+    $kws = item_keywords($it);
+    $all = $it['title'] . ' ' . ($it['title_es'] ?? '') . ' ' . ($it['summary'] ?? '') . ' ' . $src . ' ' . implode(' ', $kws) . ' ' . implode(' ', $it['source_keywords'] ?? []);
+    if (!contains($all, $fq)) return false;
     if ($ff !== '' && $it['source_id'] !== $ff) return false;
     if ($fl !== '' && ($it['language'] ?? '') !== $fl) return false;
     if ($fk !== '' && !in_array($fk, $kws, true)) return false;
@@ -41,7 +42,7 @@ layout_start('Tablero', 'index.php'); ?>
     </select>
     <select name="idioma">
       <option value="">Todos los idiomas</option>
-      <?php foreach ($langs as $l): ?><option <?= $fl === $l ? 'selected' : '' ?>><?= e($l) ?></option><?php endforeach; ?>
+      <?php foreach ($langs as $l): ?><option value="<?= e($l) ?>" <?= $fl === $l ? 'selected' : '' ?>><?= e(ucfirst(lang_name($l))) ?></option><?php endforeach; ?>
     </select>
     <?php if ($fk !== ''): ?><input type="hidden" name="kw" value="<?= e($fk) ?>"><?php endif; ?>
     <button>Buscar</button>
@@ -57,11 +58,13 @@ layout_start('Tablero', 'index.php'); ?>
   <div class="grid">
     <?php foreach ($filtered as $it):
         $chips = [];
-        foreach ($it['source_keywords'] ?? [] as $k) $chips[] = ['label' => $k, 'href' => url_with(['kw' => $k]), 'title' => 'Keyword declarada por la fuente'];
-        if (!empty($it['language'])) $chips[] = ['label' => strtoupper($it['language']), 'title' => 'Idioma'];
+        foreach (item_keywords($it) as $k) $chips[] = ['label' => $k, 'href' => url_with(['kw' => $k]), 'title' => 'Keyword declarada por la fuente'];
+        if (!empty($it['language'])) $chips[] = ['label' => 'Original en ' . lang_name($it['language']), 'title' => 'Idioma original'];
         if (!empty($it['content_type'])) $chips[] = ['label' => $it['content_type'], 'title' => 'Tipo de contenido'];
+        $tituloEs = $it['title_es'] ?? null;
         card([
-            'title' => $it['title'],
+            'title' => $tituloEs ?: $it['title'],
+            'title_original' => $tituloEs ? $it['title'] : null,
             'url' => $it['url'],
             'origin' => $sources[$it['source_id']]['name'] ?? $it['source_id'],
             'meta' => [$it['published_at'] ?? 'sin fecha', implode(', ', $it['authors'] ?? [])],

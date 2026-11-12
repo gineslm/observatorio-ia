@@ -23,7 +23,8 @@
         "id": {"type": "string", "pattern": "^P-\\d{4}-\\d{2}-\\d{4}$"},
         "source_id": {"type": "string", "pattern": "^S\\d{2,}$"},
         "url": {"type": "string", "pattern": "^https?://"},
-        "title": {"type": "string", "minLength": 1},
+        "title": {"type": "string", "minLength": 1, "description": "Título original"},
+        "title_es": {"type": ["string", "null"], "description": "Traducción del título al castellano; null = pendiente"},
         "authors": {"type": "array", "items": {"type": "string"}},
         "published_at": {"oneOf": [{"$ref": "#/$defs/date"}, {"type": "null"}]},
         "captured_at": {"$ref": "#/$defs/date"},
@@ -32,6 +33,7 @@
         "translated_from": {"type": ["string", "null"]},
         "content_type": {"enum": ["noticia", "informe", "analisis", "opinion", "traduccion", "dataset", "otro", null], "description": "null = pendiente"},
         "source_keywords": {"type": "array", "items": {"type": "string"}, "description": "Palabras clave declaradas por la propia fuente (categorías RSS, keywords). No es taxonomía propia."},
+        "source_keywords_es": {"type": "array", "items": {"type": "string"}, "description": "Traducción al castellano de source_keywords, en el mismo orden"},
         "entry_reason": {
           "type": "object",
           "required": ["channel"],

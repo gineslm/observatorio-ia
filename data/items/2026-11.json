@@ -4,6 +4,7 @@
     "source_id": "S09",
     "url": "https://algorithmwatch.org/de/ki-in-der-migrationsverwaltung-keine-experimente-mit-den-daten-von-migrantinnen-und-klare-grenzen-fur-ki-systeme/",
     "title": "KI in der Migrationsverwaltung: Keine Experimente mit den Daten von Migrant*innen und klare Grenzen für KI-Systeme",
+    "title_es": "IA en la administración de migraciones: sin experimentos con los datos de las personas migrantes y con límites claros para los sistemas de IA",
     "authors": [],
     "published_at": "2026-10-15",
     "captured_at": "2026-11-12",
@@ -17,6 +18,13 @@
       "Diskriminierung",
       "Öffentliche Verwaltung",
       "Polizeiarbeit"
+    ],
+    "source_keywords_es": [
+      "Posicionamientos",
+      "Protección de datos",
+      "Discriminación",
+      "Administración pública",
+      "Policía"
     ],
     "entry_reason": {
       "channel": "feed",
@@ -41,6 +49,7 @@
     "source_id": "S09",
     "url": "https://algorithmwatch.org/de/entscheidungsbaum-generative-ki/",
     "title": "Entscheidungsbaum: Dein Weg zu einem verantwortungsvollen Umgang mit Chatbots",
+    "title_es": "Árbol de decisión: tu camino hacia un uso responsable de los chatbots",
     "authors": [
       "Pia Grundmann"
     ],
@@ -55,6 +64,13 @@
       "Chatbot",
       "generative KI",
       "Meinungsbildung",
+      "ZukunftD"
+    ],
+    "source_keywords_es": [
+      "Publicaciones",
+      "Chatbot",
+      "IA generativa",
+      "Formación de opinión",
       "ZukunftD"
     ],
     "entry_reason": {
@@ -80,6 +96,7 @@
     "source_id": "S09",
     "url": "https://algorithmwatch.org/de/algorithmwatch-kritisiert-im-wirtschaftsausschuss-weniger-effizienz-bei-rechenzentren-kostet-die-wirtschaft-milliarden/",
     "title": "AlgorithmWatch kritisiert im Wirtschaftsausschuss: Weniger Effizienz bei Rechenzentren kostet die Wirtschaft Milliarden",
+    "title_es": "AlgorithmWatch critica ante el comité de economía: menos eficiencia en los centros de datos cuesta miles de millones a la economía",
     "authors": [],
     "published_at": "2026-10-02",
     "captured_at": "2026-11-12",
@@ -92,6 +109,12 @@
       "Energieeffizienz",
       "Nachhaltigkeit",
       "Rechenzentren"
+    ],
+    "source_keywords_es": [
+      "Nota de prensa",
+      "Eficiencia energética",
+      "Sostenibilidad",
+      "Centros de datos"
     ],
     "entry_reason": {
       "channel": "feed",
@@ -116,6 +139,7 @@
     "source_id": "S09",
     "url": "https://algorithmwatch.org/de/verschlechterungen-von-effizienzstandards-bei-rechenzentren-fuhren-zu-zusatzlichen-energiebedarfen/",
     "title": "Studie: Verschlechterungen von Effizienzstandards bei Rechenzentren führen zu sehr großen zusätzlichen Energiebedarfen",
+    "title_es": "Estudio: rebajar los estándares de eficiencia de los centros de datos dispara la demanda adicional de energía",
     "authors": [
       "Dr. Julian Bothe"
     ],
@@ -130,6 +154,12 @@
       "Energieeffizienz",
       "Nachhaltigkeit",
       "Rechenzentren"
+    ],
+    "source_keywords_es": [
+      "Publicaciones",
+      "Eficiencia energética",
+      "Sostenibilidad",
+      "Centros de datos"
     ],
     "entry_reason": {
       "channel": "feed",
@@ -154,6 +184,7 @@
     "source_id": "S17",
     "url": "https://chinai.substack.com/p/chinai-381-chinas-venture-capital",
     "title": "ChinAI #381: China’s Venture Capital Market is Defying Common Sense",
+    "title_es": "ChinAI #381: el mercado de capital riesgo chino desafía el sentido común",
     "authors": [
       "Jeffrey Ding"
     ],
@@ -164,6 +195,7 @@
     "translated_from": null,
     "content_type": null,
     "source_keywords": [],
+    "source_keywords_es": [],
     "entry_reason": {
       "channel": "feed",
       "detail": "https://chinai.substack.com/feed"
@@ -187,6 +219,7 @@
     "source_id": "S17",
     "url": "https://chinai.substack.com/p/chinai-380-its-getting-more-and-more",
     "title": "ChinAI #380: It’s getting more and more difficult to make money",
+    "title_es": "ChinAI #380: cada vez es más difícil ganar dinero",
     "authors": [
       "Jeffrey Ding"
     ],
@@ -197,6 +230,7 @@
     "translated_from": null,
     "content_type": null,
     "source_keywords": [],
+    "source_keywords_es": [],
     "entry_reason": {
       "channel": "feed",
       "detail": "https://chinai.substack.com/feed"
@@ -220,6 +254,7 @@
     "source_id": "S17",
     "url": "https://chinai.substack.com/p/chinai-379-chinese-ai-can-only-make",
     "title": "ChinAI #379: “Chinese AI only makes trash TV?”",
+    "title_es": "ChinAI #379: «¿La IA china solo produce telebasura?»",
     "authors": [
       "Jeffrey Ding"
     ],
@@ -230,6 +265,7 @@
     "translated_from": null,
     "content_type": null,
     "source_keywords": [],
+    "source_keywords_es": [],
     "entry_reason": {
       "channel": "feed",
       "detail": "https://chinai.substack.com/feed"
@@ -253,6 +289,7 @@
     "source_id": "S17",
     "url": "https://chinai.substack.com/p/chinai-378-chinas-two-day-weekend",
     "title": "ChinAI #378: China’s Two-day Weekend Defenders",
+    "title_es": "ChinAI #378: los defensores chinos del fin de semana de dos días",
     "authors": [
       "Jeffrey Ding"
     ],
@@ -263,6 +300,7 @@
     "translated_from": null,
     "content_type": null,
     "source_keywords": [],
+    "source_keywords_es": [],
     "entry_reason": {
       "channel": "feed",
       "detail": "https://chinai.substack.com/feed"
@@ -286,6 +324,7 @@
     "source_id": "S07",
     "url": "https://ainowinstitute.org/news/the-ai-safety-debate-has-lost-the-plot-we-asked-10-experts-what-the-real-nightmares-are",
     "title": "The AI Safety Debate Has Lost the Plot. We Asked 10 Experts What the Real Nightmares Are",
+    "title_es": "El debate sobre la seguridad de la IA ha perdido el rumbo. Preguntamos a 10 especialistas cuáles son las pesadillas reales",
     "authors": [
       "AI Now Institute"
     ],
@@ -298,6 +337,10 @@
     "source_keywords": [
       "News",
       "Press"
+    ],
+    "source_keywords_es": [
+      "Noticias",
+      "Prensa"
     ],
     "entry_reason": {
       "channel": "feed",
@@ -322,6 +365,7 @@
     "source_id": "S07",
     "url": "https://ainowinstitute.org/news/palantir-hires-a-former-democratic-senator-as-it-faces-scrutiny-in-new-congress",
     "title": "Palantir hires a former Democratic senator as it faces scrutiny in new Congress",
+    "title_es": "Palantir ficha a un exsenador demócrata ante el escrutinio del nuevo Congreso",
     "authors": [
       "AI Now Institute"
     ],
@@ -334,6 +378,10 @@
     "source_keywords": [
       "News",
       "Press"
+    ],
+    "source_keywords_es": [
+      "Noticias",
+      "Prensa"
     ],
     "entry_reason": {
       "channel": "feed",
@@ -358,6 +406,7 @@
     "source_id": "S07",
     "url": "https://ainowinstitute.org/news/2026-election-breakdown-americans-vote-down-data-centers-ai-and-oligarchy",
     "title": "2026 election breakdown: Americans vote down data centers, AI and oligarchy",
+    "title_es": "Análisis de las elecciones de 2026: los estadounidenses votan contra los centros de datos, la IA y la oligarquía",
     "authors": [
       "AI Now Institute"
     ],
@@ -370,6 +419,10 @@
     "source_keywords": [
       "News",
       "Press"
+    ],
+    "source_keywords_es": [
+      "Noticias",
+      "Prensa"
     ],
     "entry_reason": {
       "channel": "feed",
@@ -394,6 +447,7 @@
     "source_id": "S07",
     "url": "https://ainowinstitute.org/news/openai-is-already-trying-to-shape-the-2028-election",
     "title": "OpenAI is already trying to shape the 2028 election",
+    "title_es": "OpenAI ya intenta influir en las elecciones de 2028",
     "authors": [
       "AI Now Institute"
     ],
@@ -406,6 +460,10 @@
     "source_keywords": [
       "News",
       "Press"
+    ],
+    "source_keywords_es": [
+      "Noticias",
+      "Prensa"
     ],
     "entry_reason": {
       "channel": "feed",
