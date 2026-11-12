@@ -24,18 +24,8 @@ $filtered = array_filter($items, function ($it) use ($sources, $fq, $ff, $fl, $f
 $activeSources = array_values(array_unique(array_column($items, 'source_id')));
 $langs = array_values(array_unique(array_filter(array_column($items, 'language'))));
 sort($langs);
-$pending = count(array_filter($items, fn($it) => !item_text($it, 'summary')));
 
 layout_start(t('board.title'), 'index.php'); ?>
-  <h1><?= e(t('board.title')) ?></h1>
-  <p class="lead"><?= e(t('board.lead')) ?></p>
-  <div class="stats">
-    <div class="stat"><b><?= count($items) ?></b><span><?= e(t('stats.items')) ?></span></div>
-    <div class="stat"><b><?= count($activeSources) ?></b><span><?= e(t('stats.active')) ?></span></div>
-    <div class="stat"><b><?= count($sources) ?></b><span><?= e(t('stats.total')) ?></span></div>
-    <div class="stat"><b><?= $pending ?></b><span><?= e(t('stats.pending')) ?></span></div>
-  </div>
-
   <form class="filters" method="get">
     <input type="search" name="q" value="<?= e($fq) ?>" placeholder="<?= e(t('search.items')) ?>">
     <select name="fuente">
@@ -54,7 +44,9 @@ layout_start(t('board.title'), 'index.php'); ?>
   <?php if ($fk !== ''): ?>
     <div class="active-filters"><?= e(t('filter.keyword')) ?>: <span class="chip"><?= e($fk) ?></span> <a href="<?= e(url_with(['kw' => null])) ?>"><?= e(t('filter.remove')) ?></a></div>
   <?php endif; ?>
-  <div class="count"><?= e(t('count.items', count($filtered))) ?><?= ($fq . $ff . $fl . $fk) !== '' ? ' · <a href="index.php">' . e(t('filter.clear')) . '</a>' : '' ?></div>
+  <?php if (($fq . $ff . $fl . $fk) !== ''): ?>
+    <div class="count"><?= e(t('count.items', count($filtered))) ?> · <a href="index.php"><?= e(t('filter.clear')) ?></a></div>
+  <?php endif; ?>
 
   <?php if (!$filtered): ?>
     <div class="empty"><?= e(t('empty.items')) ?></div>
