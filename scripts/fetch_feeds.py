@@ -23,6 +23,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 DATA = ROOT / "data"
 UA = "observatorio-feed-reader/0.1 (+https://github.com/gineslm/observatorio-ia)"
+IGNORED_KEYWORDS = {"uncategorized", "sin categoría", "allgemein"}
 NS = {"atom": "http://www.w3.org/2005/Atom", "dc": "http://purl.org/dc/elements/1.1/"}
 
 
@@ -78,7 +79,10 @@ def parse(xml_bytes: bytes):
                 "language": lang,
                 "excerpt": clean(text(en.find("atom:summary", NS)) or text(en.find("atom:content", NS))),
             })
-    for e in out:  # el idioma de la URL (/de/, /en/...) manda sobre el del canal
+    for e in out:
+        # Categoría por defecto de WordPress: no es una keyword declarada.
+        e["keywords"] = [k for k in e["keywords"] if k.lower() not in IGNORED_KEYWORDS]
+        # El idioma de la URL (/de/, /en/...) manda sobre el del canal.
         m = re.search(r"https?://[^/]+/([a-z]{2})/", e["url"])
         if m:
             e["language"] = m.group(1)

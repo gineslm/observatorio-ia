@@ -1375,7 +1375,9 @@
       "parent_or_sponsor_org": null,
       "ties_and_interests": [],
       "url": "https://cset.georgetown.edu",
-      "feeds": [],
+      "feeds": [
+        "https://cset.georgetown.edu/feed/"
+      ],
       "institutional_evaluation": {
         "date": "2026-11-12",
         "rubric_version": "v0",

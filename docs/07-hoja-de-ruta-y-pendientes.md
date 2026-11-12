@@ -26,7 +26,7 @@ Estado a 2026-11-12. El orden propuesto sigue las dependencias; las fases son or
 
 ## Fase 2. Ingesta
 - [x] Escribir un lector de feeds RSS/Atom (`scripts/fetch_feeds.py`). OpenAlex pendiente.
-- [x] Feeds activos: AlgorithmWatch, AI Now, ChinAI. Data & Society tiene feed vacío; MERICS y DAIR sin feed en la ruta estándar.
+- [x] Feeds activos: AlgorithmWatch, AI Now, ChinAI, CSET. Con feed vacío (0 piezas): Data & Society, Ada Lovelace, DigiChina. Sin feed en la ruta estándar: MERICS, DAIR. Candidatas para la búsqueda semanal.
 - [ ] Revisar el feed de AlgorithmWatch: /en/feed/ devuelve piezas en alemán.
 - [ ] Probar con 3 a 5 fuentes, incluida una china de nivel 2 (CAICT o TC260) con traducción automática y marcar su calidad.
 - [ ] Probar WeChat (se espera que no sea automatizable).

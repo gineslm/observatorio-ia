@@ -624,5 +624,459 @@
       "date": null
     },
     "labels": []
+  },
+  {
+    "id": "P-2026-11-0013",
+    "source_id": "S07",
+    "url": "https://ainowinstitute.org/news/coming-soon-guest-report-on-ai-corporate-structure-and-mission-accountability",
+    "title": "Coming Soon: Guest Report on AI Corporate Structure and Mission Accountability",
+    "authors": [
+      "Maroussia Lévesque"
+    ],
+    "published_at": "2026-11-04",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": "otro",
+    "source_keywords": [
+      "Announcements",
+      "Guest Post",
+      "News",
+      "Publications"
+    ],
+    "i18n": {
+      "es": {
+        "title": "Próximamente: informe invitado sobre la estructura corporativa de las empresas de IA y la rendición de cuentas sobre su misión",
+        "summary": "Anuncio de un informe invitado, firmado por una profesora de derecho e IA, que evaluará si las fórmulas jurídicas a medida de las grandes empresas de IA (como las sociedades de beneficio público) garantizan de verdad su misión declarada de beneficiar a la humanidad.",
+        "keywords": [
+          "Anuncios",
+          "Artículo invitado",
+          "Noticias",
+          "Publicaciones"
+        ]
+      },
+      "en": {
+        "title": "Coming Soon: Guest Report on AI Corporate Structure and Mission Accountability",
+        "summary": "Announcement of a guest report by a law and AI professor assessing whether the bespoke legal structures of leading AI companies (such as public benefit corporations) actually hold them to their stated mission of benefiting humanity.",
+        "keywords": [
+          "Announcements",
+          "Guest post",
+          "News",
+          "Publications"
+        ]
+      }
+    },
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://ainowinstitute.org/feed"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0014",
+    "source_id": "S09",
+    "url": "https://algorithmwatch.org/de/stellungnahme-novelle-energieeffizienzgesetz/",
+    "title": "Stellungnahme zur öffentlichen Anhörung anlässlich der geplanten Novelle des Energieeffizienzgesetzes",
+    "authors": [
+      "Dr. Julian Bothe"
+    ],
+    "published_at": "2026-10-01",
+    "captured_at": "2026-11-12",
+    "language": "de",
+    "original_language": "de",
+    "translated_from": null,
+    "content_type": "opinion",
+    "source_keywords": [
+      "Positions",
+      "Deutschland",
+      "EnEfG",
+      "Klima"
+    ],
+    "i18n": {
+      "es": {
+        "title": "Posición ante la audiencia pública sobre la reforma prevista de la ley de eficiencia energética",
+        "summary": "Documento de posición de AlgorithmWatch sobre el proyecto del Gobierno alemán para acelerar la transposición de la directiva europea de eficiencia energética, presentado para la audiencia pública del Bundestag.",
+        "keywords": [
+          "Posicionamientos",
+          "Alemania",
+          "EnEfG",
+          "Clima"
+        ]
+      },
+      "en": {
+        "title": "Statement for the public hearing on the planned reform of the Energy Efficiency Act",
+        "summary": "AlgorithmWatch position statement on the German government bill to speed up transposition of the EU energy-efficiency directive, submitted for the Bundestag public hearing.",
+        "keywords": [
+          "Positions",
+          "Germany",
+          "EnEfG",
+          "Climate"
+        ]
+      }
+    },
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://algorithmwatch.org/en/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0015",
+    "source_id": "S17",
+    "url": "https://chinai.substack.com/p/chinai-377-us-dominance-of-the-center",
+    "title": "ChinAI #377: American Data Center Hegemony - the Center-Satellite Structure",
+    "authors": [
+      "Jeffrey Ding"
+    ],
+    "published_at": "2026-10-12",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": "traduccion",
+    "source_keywords": [],
+    "i18n": {
+      "es": {
+        "title": "ChinAI #377: la hegemonía estadounidense en centros de datos y la estructura centro-satélite",
+        "summary": "Traduce un ensayo de un investigador de la Universidad de Pekín: el dominio de EE. UU. en infraestructura de cómputo se apoya en una estructura centro-satélite (centros de datos, energía, suelo y datos) de la que dependen sobre todo los países en desarrollo. China sería un caso aparte, aunque sus empresas dependen de Amazon al salir al exterior, lo que matiza la idea de que China gana la carrera exportando infraestructura.",
+        "keywords": []
+      },
+      "en": {
+        "title": "ChinAI #377: American Data Center Hegemony - the Center-Satellite Structure",
+        "summary": "Translates an essay by a Peking University researcher: US dominance in computing infrastructure rests on a centre-satellite structure (data centres, power, land and data) on which developing countries depend most. China is a special case, yet its firms rely on Amazon when expanding abroad, which qualifies the idea that China is winning the race by exporting infrastructure.",
+        "keywords": []
+      }
+    },
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://chinai.substack.com/feed"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0016",
+    "source_id": "S20",
+    "url": "https://cset.georgetown.edu/article/ai-kill-switches-what-policymakers-should-know/",
+    "title": "AI Kill Switches: What Policymakers Should Know",
+    "authors": [
+      "Emily Tavenner"
+    ],
+    "published_at": "2026-11-12",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": "analisis",
+    "source_keywords": [
+      "Artificial intelligence",
+      "Cybersecurity",
+      "United States"
+    ],
+    "i18n": {
+      "es": {
+        "title": "Interruptores de emergencia para la IA: lo que deben saber los responsables políticos",
+        "summary": "Explica qué podría significar un «interruptor de emergencia» para detener o limitar un sistema de IA ante un incidente, cómo podría implementarse en cada capa de la cadena tecnológica y qué conclusiones extraer para la regulación.",
+        "keywords": [
+          "Inteligencia artificial",
+          "Ciberseguridad",
+          "Estados Unidos"
+        ]
+      },
+      "en": {
+        "title": "AI Kill Switches: What Policymakers Should Know",
+        "summary": "Explains what an AI “kill switch” to stop or limit a system during an incident could mean, how it might be implemented at each layer of the AI stack, and the key takeaways for policymakers.",
+        "keywords": [
+          "Artificial intelligence",
+          "Cybersecurity",
+          "United States"
+        ]
+      }
+    },
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://cset.georgetown.edu/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0017",
+    "source_id": "S20",
+    "url": "https://cset.georgetown.edu/article/espionage-ai-and-the-risks-of-strategic-overreaction/",
+    "title": "Espionage, AI, and the Risks of Strategic Overreaction",
+    "authors": [
+      "Emily Tavenner"
+    ],
+    "published_at": "2026-11-11",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": "analisis",
+    "source_keywords": [
+      "Artificial intelligence",
+      "China",
+      "Cybersecurity",
+      "Export controls",
+      "Semiconductors",
+      "United States"
+    ],
+    "i18n": {
+      "es": {
+        "title": "Espionaje, IA y los riesgos de una sobrerreacción estratégica",
+        "summary": "Analiza dos episodios —las acusaciones de espionaje relacionadas con Nvidia y la oposición local a los centros de datos, vinculada por algunos a campañas de influencia chinas— y concluye que no prueban una campaña coordinada, pero muestran cómo amenazas externas y decisiones internas condicionan la competencia en IA entre EE. UU. y China; pide respuestas basadas en evidencia.",
+        "keywords": [
+          "Inteligencia artificial",
+          "China",
+          "Ciberseguridad",
+          "Controles de exportación",
+          "Semiconductores",
+          "Estados Unidos"
+        ]
+      },
+      "en": {
+        "title": "Espionage, AI, and the Risks of Strategic Overreaction",
+        "summary": "Analyses two episodes — espionage allegations involving Nvidia and local opposition to data centres, which some link to Chinese influence campaigns — and concludes they do not show a coordinated campaign but illustrate how external threats and domestic choices shape US–China AI competition; it calls for evidence-based responses.",
+        "keywords": [
+          "Artificial intelligence",
+          "China",
+          "Cybersecurity",
+          "Export controls",
+          "Semiconductors",
+          "United States"
+        ]
+      }
+    },
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://cset.georgetown.edu/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0018",
+    "source_id": "S20",
+    "url": "https://cset.georgetown.edu/article/spy-scandal-highlights-contradictions-at-heart-of-trumps-china-policy/",
+    "title": "Spy scandal highlights contradictions at heart of Trump’s China policy",
+    "authors": [
+      "Jason Ly"
+    ],
+    "published_at": "2026-11-11",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": "noticia",
+    "source_keywords": [
+      "Artificial intelligence",
+      "Export controls"
+    ],
+    "i18n": {
+      "es": {
+        "title": "El escándalo de espionaje pone de relieve las contradicciones de la política de Trump hacia China",
+        "summary": "Artículo de prensa del Washington Post, con declaraciones de un investigador de CSET, sobre cómo las acusaciones de espionaje chino en torno a Nvidia cuestionan la política de Trump hacia China, los controles de exportación de semiconductores y la seguridad nacional.",
+        "keywords": [
+          "Inteligencia artificial",
+          "Controles de exportación"
+        ]
+      },
+      "en": {
+        "title": "Spy scandal highlights contradictions at heart of Trump’s China policy",
+        "summary": "Washington Post article, quoting a CSET researcher, on how Chinese espionage allegations around Nvidia raise questions about Trump’s China policy, semiconductor export controls and national security.",
+        "keywords": [
+          "Artificial intelligence",
+          "Export controls"
+        ]
+      }
+    },
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://cset.georgetown.edu/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0019",
+    "source_id": "S20",
+    "url": "https://cset.georgetown.edu/article/the-phantom-life-of-alice-huang-alleged-chinese-spy-who-had-affair-with-nvidia-ceo/",
+    "title": "The phantom life of Alice Huang, alleged Chinese spy who had affair with Nvidia CEO",
+    "authors": [
+      "Jason Ly"
+    ],
+    "published_at": "2026-11-10",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": "noticia",
+    "source_keywords": [
+      "Artificial intelligence",
+      "Export controls"
+    ],
+    "i18n": {
+      "es": {
+        "title": "La vida fantasma de Alice Huang, presunta espía china que tuvo una relación con el consejero delegado de Nvidia",
+        "summary": "Artículo de prensa del Washington Post, con declaraciones de un investigador de CSET, sobre las acusaciones de espionaje contra una presunta agente china y su relación con el consejero delegado de Nvidia, y sus implicaciones para los controles de exportación de chips.",
+        "keywords": [
+          "Inteligencia artificial",
+          "Controles de exportación"
+        ]
+      },
+      "en": {
+        "title": "The phantom life of Alice Huang, alleged Chinese spy who had affair with Nvidia CEO",
+        "summary": "Washington Post article, quoting a CSET researcher, on espionage allegations against an alleged Chinese agent, her relationship with Nvidia’s CEO, and the implications for chip export controls.",
+        "keywords": [
+          "Artificial intelligence",
+          "Export controls"
+        ]
+      }
+    },
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://cset.georgetown.edu/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0020",
+    "source_id": "S20",
+    "url": "https://cset.georgetown.edu/article/the-u-s-china-ai-competition-two-paths-to-artificial-general-intelligence/",
+    "title": "The U.S.–China AI Competition: Two Paths to Artificial General Intelligence",
+    "authors": [
+      "Emily Tavenner"
+    ],
+    "published_at": "2026-11-09",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": "analisis",
+    "source_keywords": [
+      "Artificial intelligence",
+      "China",
+      "Research",
+      "Talent",
+      "United States",
+      "Workforce"
+    ],
+    "i18n": {
+      "es": {
+        "title": "La competencia en IA entre EE. UU. y China: dos caminos hacia la inteligencia artificial general",
+        "summary": "Avance de un estudio de CSET: EE. UU. lidera en modelos de frontera y cómputo, mientras China explora vías más amplias hacia la IA general (robótica, IA corporizada, sistemas inspirados en el cerebro). Plantea qué se pierde al ver la competencia como una única carrera.",
+        "keywords": [
+          "Inteligencia artificial",
+          "China",
+          "Investigación",
+          "Talento",
+          "Estados Unidos",
+          "Fuerza laboral"
+        ]
+      },
+      "en": {
+        "title": "The U.S.–China AI Competition: Two Paths to Artificial General Intelligence",
+        "summary": "Preview of a CSET study: the US leads in frontier models and compute, while China pursues broader paths to AGI (robotics, embodiment, brain-inspired systems). It asks what policymakers miss by treating the competition as a single race.",
+        "keywords": [
+          "Artificial intelligence",
+          "China",
+          "Research",
+          "Talent",
+          "United States",
+          "Workforce"
+        ]
+      }
+    },
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://cset.georgetown.edu/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
   }
 ]
