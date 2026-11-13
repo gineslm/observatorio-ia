@@ -1,5 +1,5 @@
 <?php
-// POST item_id, value (1 | 0 | "") -> guarda o quita la marca de interés. Solo local y mismo origen.
+// POST item_id, status (sin | ok | estrella) -> guarda el estado de valoración. Solo local y mismo origen.
 declare(strict_types=1);
 require __DIR__ . '/../inc/app.php';
 require __DIR__ . '/../inc/feedback.php';
@@ -26,7 +26,7 @@ $id = (string)($_POST['item_id'] ?? '');
 if (!preg_match('/^P-\d{4}-\d{2}-[FC]?\d{4}$/', $id)) fail(400, 'item_id no válido');
 if (!in_array($id, array_column(load_items(), 'id'), true)) fail(404, 'Pieza inexistente');
 
-$raw = (string)($_POST['value'] ?? '');
-$value = $raw === '1' ? true : ($raw === '0' ? false : null);
-save_feedback($id, $value);
-echo json_encode(['ok' => true, 'item_id' => $id, 'value' => $value]);
+$status = (string)($_POST['status'] ?? '');
+if (!in_array($status, STATUSES, true)) fail(400, 'status no válido');
+save_feedback($id, $status);
+echo json_encode(['ok' => true, 'item_id' => $id, 'status' => $status]);

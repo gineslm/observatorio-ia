@@ -14,7 +14,7 @@ Estado: 2026-11-13. **Implementado en local, sin desplegar.** Diagnóstico de Ar
 
 **Cron configurado (2026-11-13):** servicio externo cron-job.org, a diario a las 06:00 (Europe/Madrid), POST con la cabecera `X-Cron-Token` y avisos por email si falla o se recupera. Corta a los 30 s; `fetch_feeds.php` sigue ejecutándose aunque se desconecte (`ignore_user_abort`, hasta 300 s).
 
-**Implementado:** reparto por autor (`items/feed`, `items/consulta`, `enrichment`) con ids `F`/`C`, `cron/fetch_feeds.php` (CLI o POST con token, bloqueo, escritura atómica, logs), `scripts/sync.py` (`bajar`, `subir`, `desplegar`, `sembrar`, `guardar-clave`), `.htaccess` en `deploy/`. El marcador ✓/✗ solo funciona con `php -S` en local; en el hosting no aparece y `api/` no se despliega.
+**Implementado:** reparto por autor (`items/feed`, `items/consulta`, `enrichment`) con ids `F`/`C`, `cron/fetch_feeds.php` (CLI o POST con token, bloqueo, escritura atómica, logs), `scripts/sync.py` (`bajar`, `subir`, `desplegar`, `sembrar`, `guardar-clave`), `.htaccess` en `deploy/`. El estado de valoración (✓/★) solo funciona con `php -S` en local; en el hosting no aparece y `api/` no se despliega.
 
 ## 1. Lo decidido por la persona responsable
 - El servidor de producción es un **hosting compartido Linux de Aruba con PHP**.
@@ -38,7 +38,7 @@ Servidor y equipo local escriben a la vez sobre los mismos datos. Para no pisars
 | `data/items/feed/AAAA-MM.json` | Servidor (cron) | Piezas de RSS: metadatos y keywords de la fuente, sin resumen |
 | `data/items/consulta/AAAA-MM.json` | Tarea local | Piezas encontradas por búsqueda |
 | `data/enrichment/AAAA-MM.json` | Tarea local | Por id de pieza: `i18n.es`/`i18n.en` (título, resumen, keywords) y `content_type` |
-| `data/feedback/interest.json` | Persona responsable (portal local) | Marcas ✓/✗ |
+| `data/feedback/interest.json` | Persona responsable (portal local) | Estados de valoración (✓ interesante / ★ destacado) |
 | `data/sources.json`, `data/gold-set/*` | Equipo local (humano o agente) | Registro y correcciones |
 
 - El portal combina al leer: pieza (feed o consulta) + enriquecimiento por id.
@@ -62,7 +62,7 @@ Servidor y equipo local escriben a la vez sobre los mismos datos. Para no pisars
 ### 4.3 Código del portal
 - Se despliega desde el equipo local subiendo `public/` y `cron/`.
 - Nunca se suben `.venv/`, `private/`, `.git/` ni `scripts/` de desarrollo.
-- El marcador ✓/✗ sigue siendo solo local. En el servidor no aparece y su endpoint rechaza las peticiones.
+- El estado de valoración (✓/★) sigue siendo solo local. En el servidor no aparece y su endpoint rechaza las peticiones.
 
 ## 5. Comprobaciones en Aruba (antes de programar)
 Confianza baja-media: depende del plan contratado. Hay que verificarlo en el panel o con soporte.

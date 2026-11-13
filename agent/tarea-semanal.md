@@ -21,7 +21,7 @@ Autores de los ficheros (no los mezcles):
    a. `git status`: si hay cambios sin commit, para y avisa.
    b. Si existe remoto git: `git pull --rebase`. Si falla, para y avisa.
    c. `.venv/Scripts/python scripts/sync.py bajar`. Si falla, para y avisa (no sigas con datos viejos).
-2. LEER INTERESES: cruza data/feedback/interest.json con las piezas y resume qué fuentes, tipos y keywords acumulan más ✓ y más ✗.
+2. LEER INTERESES: cruza data/feedback/interest.json con las piezas y resume qué fuentes, tipos y keywords acumulan más ✓ (interesante: `interesting: true`) y más ★ (destacado: además `featured: true`). Las piezas sin registro están pendientes de valorar: no cuentan como desinterés. Registros antiguos con `interesting: false` (✗) significan «no interesa».
 3. ENRIQUECER: para cada pieza (feed o consulta) sin entrada completa en data/enrichment/AAAA-MM.json:
    - Abre la URL. Si hay muro de pago, bloqueo o condiciones que lo impidan, no lo eludas: deja summary en null y anótalo.
    - i18n.es / i18n.en: "title" (traducción fiel; si el original ya está en ese idioma, cópialo), "summary" (1 a 3 frases con palabras propias; nunca copies frases del original ni del extracto), "keywords" (traducción de source_keywords en el mismo orden).

@@ -14,7 +14,10 @@ function is_local_request(): bool {
     return PHP_SAPI === 'cli-server' && in_array($ip, ['127.0.0.1', '::1'], true);
 }
 
-/** Mapa item_id => ['interesting' => bool, 'date' => 'AAAA-MM-DD']. */
+// Estados de valoración, en orden de avance: pendiente (sin registro) -> ok (interesante) -> destacado.
+const STATUSES = ['sin', 'ok', 'estrella'];
+
+/** Mapa item_id => ['interesting' => bool, 'featured' => bool?, 'date' => 'AAAA-MM-DD']. */
 function load_feedback(): array {
     $arr = json_decode((string)@file_get_contents(FEEDBACK_FILE), true);
     $map = [];
@@ -22,15 +25,25 @@ function load_feedback(): array {
     return $map;
 }
 
-/** $value: true, false o null (quitar marca). */
-function save_feedback(string $itemId, ?bool $value): void {
+/** Estado de una pieza a partir de su registro. Las marcas antiguas «no interesa» (interesting=false) cuentan como pendientes. */
+function item_status(?array $r): string {
+    if (!$r || empty($r['interesting'])) return 'sin';
+    return !empty($r['featured']) ? 'estrella' : 'ok';
+}
+
+/** $status: 'sin' (quita el registro), 'ok' o 'estrella'. */
+function save_feedback(string $itemId, string $status): void {
     $dir = dirname(FEEDBACK_FILE);
     if (!is_dir($dir)) mkdir($dir, 0775, true);
     $fh = fopen(FEEDBACK_FILE, 'c+');
     if (!$fh || !flock($fh, LOCK_EX)) throw new RuntimeException('No se pudo bloquear el fichero de marcas');
     $arr = json_decode(stream_get_contents($fh) ?: '[]', true) ?: [];
     $arr = array_values(array_filter($arr, fn($r) => $r['item_id'] !== $itemId));
-    if ($value !== null) $arr[] = ['item_id' => $itemId, 'interesting' => $value, 'date' => date('Y-m-d')];
+    if ($status !== 'sin') {
+        $rec = ['item_id' => $itemId, 'interesting' => true];
+        if ($status === 'estrella') $rec['featured'] = true;
+        $arr[] = $rec + ['date' => date('Y-m-d')];
+    }
     usort($arr, fn($a, $b) => strcmp($a['item_id'], $b['item_id']));
     ftruncate($fh, 0);
     rewind($fh);
