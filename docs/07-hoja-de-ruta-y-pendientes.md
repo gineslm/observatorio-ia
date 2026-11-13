@@ -33,6 +33,9 @@ Estado a 2026-11-12. El orden propuesto sigue las dependencias; las fases son or
 - [ ] Resolver el acceso a webs bloqueadas (Wired, AIAAIC, etc.): RSS, API, navegador o lectura manual.
 - [ ] Decidir dónde se ejecuta la captura: desde el ordenador de la persona responsable con Claude Code, no necesariamente en el hosting.
 
+## Fase 2b. Servidor Aruba y sincronización
+- [ ] Seguir el plan de `08-arquitectura-servidor.md` (pendiente de las comprobaciones de Aruba y de decidir sobre GitHub).
+
 ## Fase 3. Ciclo semanal
 - [ ] Primera captura. Contar piezas desde ese día (los disparadores empiezan aquí).
 - [ ] Programar en Claude Desktop la tarea de `agent/tarea-semanal.md` y fijar el día de revisión humana.

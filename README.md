@@ -19,6 +19,7 @@ docs/
   05-esquema-datos-v0.md          esquema de fuentes, piezas y correcciones
   06-agente-instrucciones-v0.md   borrador de instrucciones del agente
   07-hoja-de-ruta-y-pendientes.md fases, dependencias y pendientes
+  08-arquitectura-servidor.md     propuesta servidor Aruba + tarea local (pendiente)
 data/
   sources.json                    registro semilla (21 fuentes), esquema v1.0
   items/                          piezas por mes (vacío)
