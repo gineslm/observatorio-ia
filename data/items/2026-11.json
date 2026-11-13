@@ -1078,5 +1078,138 @@
       "date": null
     },
     "labels": []
+  },
+  {
+    "id": "P-2026-11-0021",
+    "source_id": "S11",
+    "url": "https://www.adalovelaceinstitute.org/blog/preparing-young-people-for-work-in-the-ai-era/",
+    "title": "Preparing young people for work in the AI era",
+    "authors": [
+      "Josh Hillman"
+    ],
+    "published_at": "2026-11-09",
+    "captured_at": "2026-11-13",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": "opinion",
+    "source_keywords": [],
+    "i18n": {
+      "es": {
+        "title": "Preparar a los jóvenes para trabajar en la era de la IA",
+        "summary": "Sostiene que la IA está vaciando las tareas rutinarias con las que los jóvenes aprendían en sus primeros empleos y que no basta con más o menos tecnología en la escuela: hacen falta conocimiento de base para detectar errores de la IA, alfabetización práctica en IA, orientación profesional con apoyo humano y evaluaciones que midan esas capacidades. Advierte del riesgo de agravar desigualdades y propone un derecho nacional a la alfabetización digital y en IA.",
+        "keywords": []
+      },
+      "en": {
+        "title": "Preparing young people for work in the AI era",
+        "summary": "Argues that AI is hollowing out the routine tasks through which young people learned in entry-level jobs, and that more or less technology in schools is the wrong question: young people need foundational knowledge to spot AI errors, practical AI literacy, careers guidance with human support, and assessment that measures these abilities. It warns that disadvantage could deepen and proposes a national AI and digital literacy entitlement.",
+        "keywords": []
+      }
+    },
+    "entry_reason": {
+      "channel": "consulta",
+      "detail": "site:adalovelaceinstitute.org Ada Lovelace Institute report November 2026"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0022",
+    "source_id": "S11",
+    "url": "https://www.adalovelaceinstitute.org/press-release/home-office-announcement-on-police-facial-recognition-legislation/",
+    "title": "Ada Lovelace Institute response to Home Office announcement on police facial recognition legislation",
+    "authors": [
+      "Michael Birtwistle"
+    ],
+    "published_at": "2026-11-04",
+    "captured_at": "2026-11-13",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": "opinion",
+    "source_keywords": [],
+    "i18n": {
+      "es": {
+        "title": "Respuesta del Ada Lovelace Institute al anuncio del Ministerio del Interior británico sobre la legislación de reconocimiento facial policial",
+        "summary": "El instituto valora el plan del Gobierno británico de crear un organismo supervisor independiente y legislar el reconocimiento facial policial, algo que reclamaba desde 2020. Pide que la ley fije un umbral claro de gravedad del delito para usar la tecnología, critica su uso en protestas y controles no penales, y quiere que el código para el sector privado sea obligatorio.",
+        "keywords": []
+      },
+      "en": {
+        "title": "Ada Lovelace Institute response to Home Office announcement on police facial recognition legislation",
+        "summary": "The institute welcomes the UK government’s plan for an independent oversight body and legislation on police facial recognition, which it has called for since 2020. It asks the bill to set a clear seriousness threshold for using the technology, criticises its use at protests and in non-criminal checks, and wants the private-sector code of practice to be mandatory.",
+        "keywords": []
+      }
+    },
+    "entry_reason": {
+      "channel": "consulta",
+      "detail": "site:adalovelaceinstitute.org Ada Lovelace Institute report November 2026"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0023",
+    "source_id": "S21",
+    "url": "https://merics.org/en/tracker/china-pushes-ahead-ai-adoption-and-prepares-possible-jobs-crisis",
+    "title": "China pushes ahead with AI adoption and prepares for a possible jobs crisis",
+    "authors": [
+      "Alexander Brown",
+      "Elizabeth Ru-Tung Sun"
+    ],
+    "published_at": "2026-10-26",
+    "captured_at": "2026-11-13",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "content_type": "analisis",
+    "source_keywords": [],
+    "i18n": {
+      "es": {
+        "title": "China acelera la adopción de la IA y se prepara para una posible crisis de empleo",
+        "summary": "Analiza cómo la apuesta china por la IA llega a un mercado laboral ya tensionado (paro juvenil alto, empleo industrial estancado, más trabajo precario). Aún no hay un colapso del empleo, pero la IA podría agravar la presión; Pekín combina el discurso de creación de empleo con salvaguardas como normas de impacto social, aviso de despidos masivos y sentencias contra despidos justificados por la IA.",
+        "keywords": []
+      },
+      "en": {
+        "title": "China pushes ahead with AI adoption and prepares for a possible jobs crisis",
+        "summary": "Analyses how China’s AI push lands on an already strained labour market (high youth unemployment, flat industrial jobs, more precarious work). There is no jobs collapse yet, but AI could add pressure; Beijing pairs a job-creation narrative with safeguards such as social-impact standards, mass-layoff reporting and court rulings against AI-justified dismissals.",
+        "keywords": []
+      }
+    },
+    "entry_reason": {
+      "channel": "consulta",
+      "detail": "site:merics.org MERICS China AI analysis 2026"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
   }
 ]
