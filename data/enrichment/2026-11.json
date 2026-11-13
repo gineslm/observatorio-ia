@@ -479,5 +479,80 @@
         "keywords": []
       }
     }
+  },
+  "P-2026-11-F0011": {
+    "content_type": "otro",
+    "i18n": {
+      "es": {
+        "title": "ChinAI #376: repaso de actualidad (episodio 27)",
+        "summary": "Selección comentada de diez artículos chinos recientes sobre el ecosistema de IA: la realidad tras el auge de centros de datos en Ulanqab, asistentes de viaje con IA, tendencias de arquitectura de modelos, problemas de datos de preentrenamiento, la IA médica de Alibaba, un libro blanco de CAICT sobre la economía de los tokens, agentes de IA en empresas y nuevas restricciones a las parejas virtuales para menores.",
+        "keywords": []
+      },
+      "en": {
+        "title": "ChinAI #376: Around the Horn (27th episode)",
+        "summary": "An annotated round-up of ten recent Chinese articles on the AI ecosystem: the reality behind the Ulanqab data-centre boom, AI travel assistants, model architecture trends, pre-training data problems, Alibaba’s medical AI, a CAICT white paper on the token economy, AI agents in companies, and new limits on virtual companions for minors.",
+        "keywords": []
+      }
+    }
+  },
+  "P-2026-11-F0012": {
+    "content_type": "analisis",
+    "i18n": {
+      "es": {
+        "title": "ChinAI #375: crítica a la variante de Anthropic de «marcar el ritmo de la frontera»",
+        "summary": "Texto propio de Jeffrey Ding que critica el ensayo de Dario Amodei sobre ralentizar de forma coordinada el desarrollo de la IA de frontera, por vincularlo a mantener la ventaja de EE. UU. sobre China. Cuestiona el supuesto de carrera, los plazos cambiantes y la idea vaga de «ventaja», defiende medirla por la difusión económica, advierte contra los controles de chips y propone cooperación técnica entre investigadores e industria.",
+        "keywords": []
+      },
+      "en": {
+        "title": "ChinAI #375: Critiquing Anthropic’s Variant of Pacing the Frontier",
+        "summary": "Jeffrey Ding’s own essay critiquing Dario Amodei’s piece on a coordinated slowdown of frontier AI for tying it to preserving the US lead over China. It questions the racing assumption, shifting timelines and a vague notion of “lead”, argues for measuring it by economic diffusion, warns against chip export controls, and proposes technical cooperation between researchers and industry.",
+        "keywords": []
+      }
+    }
+  },
+  "P-2026-11-F0013": {
+    "content_type": "traduccion",
+    "i18n": {
+      "es": {
+        "title": "ChinAI #374: la primera serie de televisión larga de China generada con IA",
+        "summary": "Traduce un reportaje de Huxiu sobre una serie china generada íntegramente con modelos de vídeo de ByteDance y emitida en horario de máxima audiencia: seis meses de producción, un equipo de unas cien personas, coste por episodio y límites técnicos en expresiones y coherencia. La audiencia la recibió mal; Ding lo sitúa en el auge de las microseries hechas con IA.",
+        "keywords": []
+      },
+      "en": {
+        "title": "ChinAI #374: China’s first AI-generated longform TV series",
+        "summary": "Translates a Huxiu feature on a Chinese series generated entirely with ByteDance video models and aired in prime time: six months of production, a crew of about a hundred, per-episode costs and technical limits in expressions and consistency. Audiences reacted poorly; Ding places it within the boom in AI-made microdramas.",
+        "keywords": []
+      }
+    }
+  },
+  "P-2026-11-F0014": {
+    "content_type": "traduccion",
+    "i18n": {
+      "es": {
+        "title": "ChinAI #373: la euforia por OpenClaw y la sobrestimación de la ventaja china en difusión",
+        "summary": "Traduce un artículo de QbitAI sobre el auge y declive del agente de código abierto OpenClaw en China. Ding rebate que su popularidad pruebe una ventaja china en la difusión de la IA: sus propios datos muestran cifras de uso similares a las de EE. UU., la herramienta era difícil de usar y, si la difusión pasa por la nube, China iría por detrás.",
+        "keywords": []
+      },
+      "en": {
+        "title": "ChinAI #373: The OpenClaw Hype and Overestimating China’s Diffusion Advantage",
+        "summary": "Translates a QbitAI article on the rise and fall of the open-source agent OpenClaw in China. Ding rejects the claim that its popularity proves a Chinese advantage in AI diffusion: his own data show usage similar to the US, the tool was hard to use, and if diffusion runs through the cloud, China would lag behind.",
+        "keywords": []
+      }
+    }
+  },
+  "P-2026-11-F0015": {
+    "content_type": "traduccion",
+    "i18n": {
+      "es": {
+        "title": "ChinAI #372: el sobrevalorado sector chino de la IA corporizada",
+        "summary": "Traduce un reportaje de LatePost sobre la robótica china: valoraciones muy superiores a las capacidades demostradas, ingresos procedentes de socios estatales que son a la vez inversores y clientes, ventas sobre todo a centros de investigación y escasa inversión en I+D. Ding lo presenta como contrapeso al entusiasmo poco documentado sobre la ventaja china en robótica.",
+        "keywords": []
+      },
+      "en": {
+        "title": "ChinAI #372: China’s Overhyped Embodied AI Sector",
+        "summary": "Translates a LatePost feature on Chinese robotics: valuations far ahead of demonstrated capabilities, revenue from state partners acting as both investors and customers, sales mainly to research centres, and little R&D investment. Ding presents it as a counterweight to poorly evidenced enthusiasm about China’s robotics advantage.",
+        "keywords": []
+      }
+    }
   }
 }
