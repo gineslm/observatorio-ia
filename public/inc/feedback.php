@@ -5,9 +5,13 @@ declare(strict_types=1);
 
 const FEEDBACK_FILE = DATA_DIR . '/feedback/interest.json';
 
+/**
+ * Solo la herramienta local: servidor de desarrollo de PHP (php -S) y petición desde la propia máquina.
+ * En el hosting (Apache/FPM) siempre es false, aunque un proxy haga llegar las visitas como 127.0.0.1.
+ */
 function is_local_request(): bool {
     $ip = $_SERVER['REMOTE_ADDR'] ?? '';
-    return in_array($ip, ['127.0.0.1', '::1'], true);
+    return PHP_SAPI === 'cli-server' && in_array($ip, ['127.0.0.1', '::1'], true);
 }
 
 /** Mapa item_id => ['interesting' => bool, 'date' => 'AAAA-MM-DD']. */

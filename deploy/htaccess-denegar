@@ -1,0 +1,5 @@
+# Carpeta interna: sin acceso web (data/, inc/, lang/)
+Require all denied
+<IfModule !mod_authz_core.c>
+  Deny from all
+</IfModule>

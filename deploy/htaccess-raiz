@@ -1,0 +1,8 @@
+# Raíz del portal en el servidor
+Options -Indexes
+DirectoryIndex index.php
+
+# Ficheros ocultos, de configuración y de copia: nunca accesibles
+<FilesMatch "(^\.|\.(env|tmp|lock|log|md|py)$|config\.local\.php$)">
+  Require all denied
+</FilesMatch>

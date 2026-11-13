@@ -1,0 +1,5 @@
+# cron/: solo fetch_feeds.php es accesible (y exige POST con token); la configuración nunca
+Options -Indexes
+<Files "config.local.php">
+  Require all denied
+</Files>

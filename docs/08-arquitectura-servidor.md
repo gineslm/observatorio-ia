@@ -1,6 +1,18 @@
-# Arquitectura servidor + equipo local (propuesta, pendiente de decisión)
+# Arquitectura servidor + equipo local
 
-Estado: 2026-11-13. Propuesta del asistente a partir de lo indicado por la persona responsable. **No implementado.** Sirve de punto de partida para una sesión nueva.
+Estado: 2026-11-13. **Implementado en local, sin desplegar.** Falta ejecutar el diagnóstico en Aruba y confirmar el cron.
+
+## 0. Puesta en marcha (lo ejecuta la persona responsable en su terminal)
+1. Diagnóstico: `.venv/Scripts/python scripts/ftps.py diag-subir`, abrir la URL que devuelve, revisar el resultado, abrirla de nuevo con `&limpiar=1` y después `diag-borrar`.
+2. Guardar la contraseña FTPS en el Administrador de credenciales de Windows: `.venv/Scripts/python scripts/sync.py guardar-clave`.
+3. Desplegar el código: `sync.py desplegar`. Genera `CRON_TOKEN` en `private/servidor-aruba.env` y protege `data/`, `inc/` y `lang/` con `.htaccess`.
+4. Primera carga de datos: `sync.py sembrar` (piezas de feed existentes, solo una vez) y `sync.py subir` (fuentes, consulta y enriquecimiento).
+5. Programar la captura:
+   - Si el panel de Aruba tiene cron: `php <ruta>/cron/fetch_feeds.php`. La ruta de PHP sale del diagnóstico.
+   - Si no lo tiene: un servicio externo de cron que haga POST a `<URL>/cron/fetch_feeds.php` con la cabecera `X-Cron-Token: <CRON_TOKEN>`.
+6. Programar en Claude Desktop la tarea de `agent/tarea-semanal.md`.
+
+**Implementado:** reparto por autor (`items/feed`, `items/consulta`, `enrichment`) con ids `F`/`C`, `cron/fetch_feeds.php` (CLI o POST con token, bloqueo, escritura atómica, logs), `scripts/sync.py` (`bajar`, `subir`, `desplegar`, `sembrar`, `guardar-clave`), `.htaccess` en `deploy/`. El marcador ✓/✗ solo funciona con `php -S` en local; en el hosting no aparece y `api/` no se despliega.
 
 ## 1. Lo decidido por la persona responsable
 - El servidor de producción es un **hosting compartido Linux de Aruba con PHP**.

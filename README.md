@@ -28,7 +28,8 @@ agent/                            espacio para el prompt/skill del agente
 schemas/                          JSON Schema de fuentes, piezas y correcciones
 scripts/validate.py               validación (ejecutar antes de cada commit)
 public/                           portal PHP de solo lectura (tablero, fuentes, recursos)
-scripts/fetch_feeds.py            captura de feeds RSS/Atom
+cron/fetch_feeds.php              captura de feeds RSS/Atom (servidor)
+scripts/sync.py                   sincronización FTPS con el servidor
 ```
 
 ## Primeros pasos en Claude Code
@@ -52,13 +53,13 @@ Abrir http://127.0.0.1:8000. Interfaz en castellano o inglés (selector ES/EN en
 
 En local, cada card del tablero tiene un marcador ✓ / ✗ (interesa / no interesa) que se guarda en `data/feedback/interest.json` y permite filtrar. Sirve para afinar las búsquedas de la tarea semanal. Fuera de localhost no se muestra ni se puede escribir.
 
-## Capturar piezas
+## Capturar piezas y sincronizar con el servidor
 
-```
-.venv/Scripts/python scripts/fetch_feeds.py --limit 5 --excerpts
-```
+- **Captura RSS** (autor de `data/items/feed/`): `php cron/fetch_feeds.php`. En el servidor la lanza un cron.
+- **Sincronización por FTPS**: `.venv/Scripts/python scripts/sync.py bajar|subir|desplegar|sembrar|guardar-clave`.
+- **Ampliación** (búsquedas, resúmenes, traducciones): tarea programada de `agent/tarea-semanal.md`.
 
-Lee los feeds de `data/sources.json` y añade a `data/items/AAAA-MM.json` solo metadatos y keywords declaradas por la fuente. El resumen queda en `null` hasta escribirlo con palabras propias. La tarea semanal automatizada está en `agent/tarea-semanal.md`.
+Arquitectura y puesta en marcha: `docs/08-arquitectura-servidor.md`.
 
 ## Validar los datos
 

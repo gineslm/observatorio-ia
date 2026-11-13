@@ -36,7 +36,25 @@ def load_env() -> dict:
     return cfg
 
 
-def connect(cfg: dict, verify: bool) -> FTP_TLS:
+KEYRING_SERVICE = "observatorio-ia-ftps"
+
+
+def password(cfg: dict) -> str:
+    """Contraseña desde el Administrador de credenciales de Windows (keyring); si no está, se pide."""
+    try:
+        import keyring
+        pwd = keyring.get_password(KEYRING_SERVICE, cfg["FTP_USER"])
+        if pwd:
+            return pwd
+    except Exception:  # noqa: BLE001 - sin keyring se pide por teclado
+        pass
+    if not sys.stdin.isatty():
+        sys.exit("No hay contraseña en el almacén de credenciales y no se puede pedir (ejecución no interactiva).\n"
+                 "Ejecuta una vez en tu terminal: .venv/Scripts/python scripts/sync.py guardar-clave")
+    return getpass.getpass(f"Contraseña FTPS de {cfg['FTP_USER']}: ")
+
+
+def connect(cfg: dict, verify: bool = True) -> FTP_TLS:
     ctx = ssl.create_default_context()
     if not verify:
         print("AVISO: certificado TLS sin verificar.")
@@ -44,7 +62,7 @@ def connect(cfg: dict, verify: bool) -> FTP_TLS:
         ctx.verify_mode = ssl.CERT_NONE
     ftp = FTP_TLS(context=ctx, timeout=30)
     ftp.connect(cfg["FTP_HOST"], int(cfg.get("FTP_PORT", 21)))
-    ftp.login(cfg["FTP_USER"], getpass.getpass(f"Contraseña FTPS de {cfg['FTP_USER']}: "))
+    ftp.login(cfg["FTP_USER"], password(cfg))
     ftp.prot_p()  # cifra también el canal de datos
     return ftp
 
@@ -61,6 +79,7 @@ def ensure_dir(ftp: FTP_TLS, path: str) -> None:
 
 
 def main():
+    sys.stdout.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser()
     ap.add_argument("orden", choices=["diag-subir", "diag-borrar", "listar"])
     ap.add_argument("--sin-verificar", action="store_true", help="no verificar el certificado TLS (desaconsejado)")
