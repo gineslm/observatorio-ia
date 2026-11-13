@@ -11,3 +11,7 @@ vendor/
 # Entorno local
 .venv/
 __pycache__/
+
+# Servidor: configuración local y registros
+cron/config.local.php
+data/logs/
