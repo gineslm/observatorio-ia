@@ -1,6 +1,6 @@
 # Arquitectura servidor + equipo local
 
-Estado: 2026-11-13. **Implementado en local, sin desplegar.** Falta ejecutar el diagnóstico en Aruba y confirmar el cron.
+Estado: 2026-11-13. **Implementado en local, sin desplegar.** Diagnóstico de Aruba hecho y favorable; falta confirmar el cron y desplegar.
 
 ## 0. Puesta en marcha (lo ejecuta la persona responsable en su terminal)
 1. Diagnóstico: `.venv/Scripts/python scripts/ftps.py diag-subir`, abrir la URL que devuelve, revisar el resultado, abrirla de nuevo con `&limpiar=1` y después `diag-borrar`.
@@ -70,8 +70,17 @@ Confianza baja-media: depende del plan contratado. Hay que verificarlo en el pan
 - Transferencia por **FTPS explícito** en el puerto 21. En Python: `ftplib.FTP_TLS` y después `prot_p()`. No consta que haya SFTP ni SSH, así que no se puede usar git en el servidor y el despliegue y la sincronización se hacen por FTPS.
 - El portal irá en una **subcarpeta del dominio**, todavía no creada. Al estar dentro del document root, hay que proteger `data/`, `cron/` e `inc/` del acceso web.
 
+**Resultado del diagnóstico (2026-11-13), ya borrado del servidor:**
+- PHP 8.4 (FPM) sobre Apache. Memoria 1024 MB y ejecución máxima 900 s.
+- Extensiones: curl, openssl, mbstring, json, simplexml, dom, zip, pdo_mysql y **pdo_sqlite**. SQLite sirve para el futuro paso a SQL sin contratar base de datos.
+- **cURL funciona**: lee el RSS de prueba (HTTP 200, 10 items). `allow_url_fopen` está desactivado; no afecta, porque el lector usa cURL.
+- PHP **puede escribir** en la carpeta del portal.
+- **`.htaccess` protege** las carpetas (403).
+- `exec`, `shell_exec`, `proc_open` y `system` están **desactivados**: no hay git ni comandos en el servidor. La sincronización va por FTPS, como estaba previsto.
+- El acceso FTP requirió revisar el filtro de accesos o la contraseña en el panel (error 530 la primera vez).
+
 **Pendiente:**
-1. **Cron / tareas programadas** para PHP: ¿existe en el panel? ¿con qué frecuencia mínima?
+1. **Cron / tareas programadas** para PHP: ¿existe en el panel? ¿con qué frecuencia mínima? Si no existe, usar un cron externo por HTTP POST con token. Ya está implementado y no requiere `exec`.
 2. **Salida HTTP desde PHP**: cURL o `allow_url_fopen` activos, necesarios para leer los RSS.
 3. ~~Acceso de transferencia~~: resuelto, FTPS explícito.
 4. **Versión de PHP** y extensiones disponibles: `mbstring`, `json`, `simplexml`/`dom`, `curl`.
