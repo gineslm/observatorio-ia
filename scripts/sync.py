@@ -16,6 +16,7 @@ Cada fichero tiene un único autor:
 import argparse
 import getpass
 import io
+import os
 import secrets
 import subprocess
 import sys
@@ -51,12 +52,18 @@ CODE = {  # destino remoto -> origen local
 
 
 def run(*cmd) -> subprocess.CompletedProcess:
-    return subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, encoding="utf-8")
+    # En Windows el proceso hijo escribe en la codificación del sistema si no se le indica UTF-8.
+    env = {**os.environ, "PYTHONIOENCODING": "utf-8", "PYTHONUTF8": "1"}
+    return subprocess.run(cmd, cwd=ROOT, capture_output=True, text=True, encoding="utf-8", errors="replace", env=env)
 
 
 def validate() -> bool:
-    r = run(PY, "-I", "scripts/validate.py")
-    print(r.stdout.strip().splitlines()[-1] if r.stdout.strip() else r.stderr)
+    r = run(PY, "scripts/validate.py")
+    out = (r.stdout or "").strip()
+    if r.returncode != 0:
+        print(out or (r.stderr or "").strip())  # muestra todos los errores
+    else:
+        print(out.splitlines()[-1] if out else "Validación correcta.")
     return r.returncode == 0
 
 
