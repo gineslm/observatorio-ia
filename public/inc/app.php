@@ -115,6 +115,12 @@ function card(array $c): void { ?>
     <?php if (!empty($c['notes'])): ?>
       <details><summary><?= e(t('notes')) ?> <?= e(t('notes.only_es')) ?></summary><p lang="es"><?= e($c['notes']) ?></p></details>
     <?php endif; ?>
+    <?php if (array_key_exists('mark', $c)): $m = $c['mark']; ?>
+      <div class="mark" data-id="<?= e($c['id']) ?>" data-value="<?= $m === null ? '' : ($m ? '1' : '0') ?>">
+        <button type="button" class="mark-btn yes<?= $m === true ? ' on' : '' ?>" data-v="1" aria-pressed="<?= $m === true ? 'true' : 'false' ?>" title="<?= e(t('mark.yes')) ?>">✓ <?= e(t('mark.yes_short')) ?></button>
+        <button type="button" class="mark-btn no<?= $m === false ? ' on' : '' ?>" data-v="0" aria-pressed="<?= $m === false ? 'true' : 'false' ?>" title="<?= e(t('mark.no')) ?>">✗ <?= e(t('mark.no_short')) ?></button>
+      </div>
+    <?php endif; ?>
     <?php if (!empty($c['footer'])): ?><div class="card-foot"><?= $c['footer'] /* HTML ya escapado por quien llama */ ?></div><?php endif; ?>
   </article>
 <?php }

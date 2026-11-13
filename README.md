@@ -49,6 +49,8 @@ Abrir http://127.0.0.1:8000. Interfaz en castellano o inglés (selector ES/EN en
 - **Fuentes** (`fuentes.php`): fuentes de contenido con su valoración C1–C5.
 - **Recursos** (`recursos.php`): herramientas, bases de datos e índices (`kind: infrastructure`).
 
+En local, cada card del tablero tiene un marcador ✓ / ✗ (interesa / no interesa) que se guarda en `data/feedback/interest.json` y permite filtrar. Sirve para afinar las búsquedas de la tarea semanal. Fuera de localhost no se muestra ni se puede escribir.
+
 ## Capturar piezas
 
 ```

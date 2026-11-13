@@ -33,6 +33,7 @@ Observatorio documental sobre inteligencia artificial: registra fuentes, selecci
 13. Agente en lugar de especialista: no habrá especialista humano. Se diseña un agente con vocabularios controlados, ficheros versionados y un conjunto de referencia (gold set) con las correcciones humanas; prueba periódica de deriva.
 14. Suscripciones pospuestas (Policy Commons, Overton), incluida la prueba gratuita. Se retoma si la estrategia propia no da buenos resultados.
 15. Evaluación de fuentes en dos fases (2026-11-12). Las fuentes con páginas inaccesibles se quedan en NE hasta que se aporte el contenido o se encuentre otra vía.
+16. Marcador de interés (2026-11-13): la persona responsable marca piezas como interesantes o no desde el portal local (✓/✗). Única escritura permitida desde PHP, solo en local y en `data/feedback/interest.json`; el agente la usa para afinar búsquedas y nunca la modifica.
 
 ## Conflictos declarados
 - Claude es un modelo de Anthropic. Evaluar fuentes vinculadas a Anthropic (Import AI, Transluce) exige revisión humana reforzada.

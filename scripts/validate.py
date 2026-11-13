@@ -59,6 +59,19 @@ def main() -> int:
 
     check_schema(DATA / "gold-set" / "corrections.json", "corrections.schema.json")
 
+    fb_path = DATA / "feedback" / "interest.json"
+    if fb_path.exists():
+        seen = set()
+        for r in check_schema(fb_path, "feedback.schema.json"):
+            if not isinstance(r, dict):
+                continue
+            iid = r.get("item_id")
+            if iid in seen:
+                errors.append(f"interest.json: marca duplicada para {iid}")
+            seen.add(iid)
+            if iid not in item_ids:
+                errors.append(f"interest.json: marca para pieza inexistente {iid}")
+
     for w in warnings:
         print(f"AVISO  {w}")
     for e in errors:

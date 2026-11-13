@@ -53,5 +53,14 @@ return [
     'ct.noticia' => 'news', 'ct.informe' => 'report', 'ct.analisis' => 'analysis', 'ct.opinion' => 'opinion', 'ct.traduccion' => 'translation', 'ct.dataset' => 'dataset', 'ct.otro' => 'other',
     'lang.es' => 'Spanish', 'lang.en' => 'English', 'lang.de' => 'German', 'lang.fr' => 'French', 'lang.it' => 'Italian', 'lang.zh' => 'Chinese', 'lang.ca' => 'Catalan', 'lang.pt' => 'Portuguese',
 
+    'mark.yes' => 'Interesting (click again to clear)',
+    'mark.no' => 'Not interesting (click again to clear)',
+    'mark.yes_short' => 'Interesting',
+    'mark.no_short' => 'Not interesting',
+    'mark.all' => 'All marks',
+    'mark.f_yes' => 'Interesting',
+    'mark.f_no' => 'Not interesting',
+    'mark.f_none' => 'Unmarked',
+
     'footer' => 'Assessments and summaries proposed by an AI assistant, not yet reviewed by a human. N/A = not assessable (not the same as Low). Keywords are those declared by each source, translated; they are not our own classification.',
 ];

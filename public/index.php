@@ -1,12 +1,17 @@
 <?php
 require __DIR__ . '/inc/app.php';
+require __DIR__ . '/inc/feedback.php';
 
 $sources = load_sources();
 $items = load_items();
+$local = is_local_request();
+$marks = $local ? load_feedback() : [];
 
-$fq = q('q'); $ff = q('fuente'); $fl = q('idioma'); $fk = q('kw');
+$fq = q('q'); $ff = q('fuente'); $fl = q('idioma'); $fk = q('kw'); $fm = $local ? q('marca') : '';
 
-$filtered = array_filter($items, function ($it) use ($sources, $fq, $ff, $fl, $fk) {
+$filtered = array_filter($items, function ($it) use ($sources, $fq, $ff, $fl, $fk, $fm, $marks) {
+    $mk = isset($marks[$it['id']]) ? ($marks[$it['id']]['interesting'] ? 'si' : 'no') : 'sin';
+    if ($fm !== '' && $fm !== $mk) return false;
     // Búsqueda y keyword valen en cualquier idioma (es, en u original).
     $kws = $it['source_keywords'] ?? [];
     $all = $it['title'] . ' ' . $sources[$it['source_id']]['name'];
@@ -38,13 +43,21 @@ layout_start(t('board.title'), 'index.php'); ?>
       <option value=""><?= e(t('filter.all_langs')) ?></option>
       <?php foreach ($langs as $l): ?><option value="<?= e($l) ?>" <?= $fl === $l ? 'selected' : '' ?>><?= e(ucfirst(t('lang.' . $l))) ?></option><?php endforeach; ?>
     </select>
+    <?php if ($local): ?>
+    <select name="marca">
+      <option value=""><?= e(t('mark.all')) ?></option>
+      <?php foreach (['si' => 'mark.f_yes', 'no' => 'mark.f_no', 'sin' => 'mark.f_none'] as $k => $lbl): ?>
+        <option value="<?= $k ?>" <?= $fm === $k ? 'selected' : '' ?>><?= e(t($lbl)) ?></option>
+      <?php endforeach; ?>
+    </select>
+    <?php endif; ?>
     <?php if ($fk !== ''): ?><input type="hidden" name="kw" value="<?= e($fk) ?>"><?php endif; ?>
     <button><?= e(t('btn.search')) ?></button>
   </form>
   <?php if ($fk !== ''): ?>
     <div class="active-filters"><?= e(t('filter.keyword')) ?>: <span class="chip"><?= e($fk) ?></span> <a href="<?= e(url_with(['kw' => null])) ?>"><?= e(t('filter.remove')) ?></a></div>
   <?php endif; ?>
-  <?php if (($fq . $ff . $fl . $fk) !== ''): ?>
+  <?php if (($fq . $ff . $fl . $fk . $fm) !== ''): ?>
     <div class="count"><?= e(t('count.items', count($filtered))) ?> · <a href="index.php"><?= e(t('filter.clear')) ?></a></div>
   <?php endif; ?>
 
@@ -58,7 +71,8 @@ layout_start(t('board.title'), 'index.php'); ?>
         if (!empty($it['language']) && $it['language'] !== LANG) $chips[] = ['label' => t('chip.original', t('lang.' . $it['language'])), 'title' => t('tip.lang')];
         if (!empty($it['content_type'])) $chips[] = ['label' => t('ct.' . $it['content_type']), 'title' => t('tip.type')];
         $title = item_text($it, 'title');
-        card([
+        $extra = $local ? ['id' => $it['id'], 'mark' => isset($marks[$it['id']]) ? (bool)$marks[$it['id']]['interesting'] : null] : [];
+        card($extra + [
             'title' => $title,
             'title_original' => $title !== $it['title'] ? $it['title'] : null,
             'url' => $it['url'],
@@ -70,4 +84,5 @@ layout_start(t('board.title'), 'index.php'); ?>
     endforeach; ?>
   </div>
   <?php endif; ?>
+  <?php if ($local): ?><script src="assets/interest.js" defer></script><?php endif; ?>
 <?php layout_end();

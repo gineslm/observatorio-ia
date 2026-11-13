@@ -53,5 +53,14 @@ return [
     'ct.noticia' => 'noticia', 'ct.informe' => 'informe', 'ct.analisis' => 'análisis', 'ct.opinion' => 'opinión', 'ct.traduccion' => 'traducción', 'ct.dataset' => 'dataset', 'ct.otro' => 'otro',
     'lang.es' => 'castellano', 'lang.en' => 'inglés', 'lang.de' => 'alemán', 'lang.fr' => 'francés', 'lang.it' => 'italiano', 'lang.zh' => 'chino', 'lang.ca' => 'catalán', 'lang.pt' => 'portugués',
 
+    'mark.yes' => 'Me interesa (pulsa otra vez para quitar la marca)',
+    'mark.no' => 'No me interesa (pulsa otra vez para quitar la marca)',
+    'mark.yes_short' => 'Interesa',
+    'mark.no_short' => 'No interesa',
+    'mark.all' => 'Todas las marcas',
+    'mark.f_yes' => 'Interesantes',
+    'mark.f_no' => 'No interesantes',
+    'mark.f_none' => 'Sin marcar',
+
     'footer' => 'Evaluaciones y resúmenes propuestos por un asistente de IA, sin revisión humana. NE = no evaluable (no equivale a Bajo). Las keywords son las que declara cada fuente, traducidas; no son una clasificación propia.',
 ];
