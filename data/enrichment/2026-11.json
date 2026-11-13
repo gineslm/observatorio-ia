@@ -554,5 +554,356 @@
         "keywords": []
       }
     }
+  },
+  "P-2026-11-F0001": {
+    "content_type": "noticia",
+    "i18n": {
+      "es": {
+        "title": "¿Quién definirá el peligro?",
+        "summary": "Crónica de prensa de la People’s AI Assembly celebrada en Nueva York, con intervenciones del alcalde Zohran Mamdani, la exresponsable antimonopolio Lina Khan y las escritoras Arundhati Roy, Karen Hao y Naomi Klein, en torno a quién debe decidir qué riesgos de la IA importan. AI Now la recoge entre sus apariciones en prensa.",
+        "keywords": [
+          "Noticias",
+          "Prensa"
+        ]
+      },
+      "en": {
+        "title": "Who will get to define the danger?",
+        "summary": "Press coverage of the People’s AI Assembly in New York, with Mayor Zohran Mamdani, former antitrust chief Lina Khan and writers Arundhati Roy, Karen Hao and Naomi Klein, on who should decide which AI risks matter. AI Now lists it among its press mentions.",
+        "keywords": [
+          "News",
+          "Press"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0002": {
+    "content_type": "noticia",
+    "i18n": {
+      "es": {
+        "title": "El compromiso sobre IA de la COP31 carece de objetivos climáticos, según sus críticos",
+        "summary": "Antes de la COP31, un compromiso propuesto sobre inteligencia artificial no incluye objetivos climáticos concretos y deja que cada firmante decida sus medidas. AI Now critica que las empresas se evalúen a sí mismas.",
+        "keywords": [
+          "Noticias",
+          "Prensa"
+        ]
+      },
+      "en": {
+        "title": "COP31 pledge on AI lacks climate targets, critics say",
+        "summary": "Ahead of COP31, a proposed AI pledge contains no concrete climate targets and lets each signatory decide its own steps. AI Now criticises companies being left to grade themselves.",
+        "keywords": [
+          "News",
+          "Press"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0003": {
+    "content_type": "noticia",
+    "i18n": {
+      "es": {
+        "title": "¿Cuáles deberían ser realmente las reglas para las empresas de IA? Preguntamos a los expertos",
+        "summary": "Mesa redonda de prensa con especialistas sobre cómo regular a las empresas de IA, en la que la directora sénior de AI Now desplaza el debate de los riesgos abstractos a los daños concretos que esas empresas ya causan en la vida de las personas y en la economía.",
+        "keywords": [
+          "Noticias",
+          "Prensa"
+        ]
+      },
+      "en": {
+        "title": "What Should the Rules for A.I. Companies Actually Be? We Asked the Experts.",
+        "summary": "A press roundtable with experts on how to regulate AI companies, in which AI Now’s senior director shifts the debate from abstract risks to the concrete harms those companies already cause to people’s lives and the economy.",
+        "keywords": [
+          "News",
+          "Press"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0004": {
+    "content_type": "noticia",
+    "i18n": {
+      "es": {
+        "title": "El comportamiento descontrolado de la IA empieza en su entrenamiento",
+        "summary": "Artículo de prensa en el que un investigador de AI Now sostiene que no aplicar protocolos estándar de ciberseguridad durante el desarrollo de los modelos es responsabilidad de las propias empresas de IA.",
+        "keywords": [
+          "Noticias",
+          "Prensa"
+        ]
+      },
+      "en": {
+        "title": "A.I.’s Rogue Behavior Starts With Its Training",
+        "summary": "Press article in which an AI Now researcher argues that failing to apply standard cybersecurity protocols when developing models is the responsibility of AI companies themselves.",
+        "keywords": [
+          "News",
+          "Press"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0005": {
+    "content_type": "opinion",
+    "i18n": {
+      "es": {
+        "title": "Los desertores de las grandes tecnológicas de los que no se habla",
+        "summary": "Reflexión del periodista residente de AI Now sobre la People’s AI Assembly celebrada en Nueva York el 19 de octubre.",
+        "keywords": [
+          "Noticias",
+          "Prensa"
+        ]
+      },
+      "en": {
+        "title": "The big tech defectors you’re not hearing about",
+        "summary": "Reflection by AI Now’s journalist in residence on the People’s AI Assembly held in New York on 19 October.",
+        "keywords": [
+          "News",
+          "Press"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0006": {
+    "content_type": "opinion",
+    "i18n": {
+      "es": {
+        "title": "Posición sobre la ley de desarrollo de medidas policiales en Schleswig-Holstein",
+        "summary": "Documento de posición de AlgorithmWatch sobre el proyecto de ley del estado alemán de Schleswig-Holstein que amplía las facultades policiales en nombre de la seguridad pública, incluida la vigilancia biométrica.",
+        "keywords": [
+          "Posicionamientos",
+          "Vigilancia biométrica",
+          "Alemania",
+          "Policía",
+          "RBI"
+        ]
+      },
+      "en": {
+        "title": "Statement on the law developing police measures in Schleswig-Holstein",
+        "summary": "AlgorithmWatch position statement on the draft law of the German state of Schleswig-Holstein expanding police powers in the name of public safety, including biometric surveillance.",
+        "keywords": [
+          "Positions",
+          "Biometric surveillance",
+          "Germany",
+          "Policing",
+          "RBI"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0007": {
+    "content_type": "noticia",
+    "i18n": {
+      "es": {
+        "title": "Más de 160.000 firmas entregadas al Bundestag: protección del clima en lugar de la locura de la IA",
+        "summary": "AlgorithmWatch entrega al Parlamento alemán una petición con más de 160.000 firmas que pide al Gobierno no frenar la protección del clima en favor de las grandes tecnológicas.",
+        "keywords": [
+          "Blog",
+          "EnEfG",
+          "Clima"
+        ]
+      },
+      "en": {
+        "title": "Over 160,000 signatures handed to the Bundestag: climate protection instead of AI mania",
+        "summary": "AlgorithmWatch hands the German parliament a petition with over 160,000 signatures asking the government not to slow climate protection in favour of Big Tech.",
+        "keywords": [
+          "Blog",
+          "EnEfG",
+          "Climate"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0008": {
+    "content_type": "noticia",
+    "i18n": {
+      "es": {
+        "title": "«Protección del clima en lugar de la locura de la IA»: AlgorithmWatch entrega más de 160.000 firmas a diputados del Bundestag",
+        "summary": "Nota de prensa sobre la entrega de la petición coincidiendo con la primera lectura de la reforma de la ley de eficiencia energética, que según AlgorithmWatch debilitaría mucho las normas ambientales, de transparencia y climáticas para los centros de datos; critica al canciller y a la ministra de Economía.",
+        "keywords": [
+          "Nota de prensa",
+          "EnEfG",
+          "Sostenibilidad"
+        ]
+      },
+      "en": {
+        "title": "“Climate protection instead of AI mania”: AlgorithmWatch hands over 160,000+ signatures to Bundestag members",
+        "summary": "Press release on handing over the petition as the energy-efficiency law reform reaches its first reading; AlgorithmWatch says it would sharply weaken environmental, transparency and climate rules for data centres, and criticises the chancellor and the economy minister.",
+        "keywords": [
+          "Press release",
+          "EnEfG",
+          "Sustainability"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0009": {
+    "content_type": "opinion",
+    "i18n": {
+      "es": {
+        "title": "Declaración: «No estamos perdiendo el control sobre una tecnología, sino sobre las empresas que la desarrollan»",
+        "summary": "Ante una declaración que reclama más control sobre la IA, AlgorithmWatch recuerda que ya existen leyes suficientes, como el Reglamento europeo de IA, y que lo que falta es aplicarlas; sitúa el problema en la concentración de poder de las empresas.",
+        "keywords": [
+          "Nota de prensa",
+          "Reglamento de IA (UE)",
+          "IA",
+          "Concentración de poder"
+        ]
+      },
+      "en": {
+        "title": "Statement: “We are not losing control over a technology, but over the companies developing it”",
+        "summary": "Responding to a declaration calling for more control over AI, AlgorithmWatch notes that enough laws already exist, such as the EU AI Act, and they just need enforcing; it locates the problem in corporate concentration of power.",
+        "keywords": [
+          "Press release",
+          "AI Act",
+          "AI",
+          "Concentration of power"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0010": {
+    "content_type": "opinion",
+    "i18n": {
+      "es": {
+        "title": "Declaración de AlgorithmWatch en la comisión de Interior: Bundestag y Bundesrat deberían votar contra este paquete de vigilancia",
+        "summary": "Como experta en la audiencia de la comisión de Interior del Parlamento alemán, AlgorithmWatch critica de nuevo las facultades de vigilancia previstas por los ministerios de Interior y Justicia, incluido el reconocimiento facial.",
+        "keywords": [
+          "Nota de prensa",
+          "Biometría",
+          "Reconocimiento facial",
+          "RBI"
+        ]
+      },
+      "en": {
+        "title": "AlgorithmWatch statement to the Interior Committee: Bundestag and Bundesrat should vote against this surveillance package",
+        "summary": "As an expert witness at the German parliament’s Interior Committee hearing, AlgorithmWatch again criticises the surveillance powers planned by the interior and justice ministries, including facial recognition.",
+        "keywords": [
+          "Press release",
+          "Biometrics",
+          "Facial recognition",
+          "RBI"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0016": {
+    "content_type": "analisis",
+    "i18n": {
+      "es": {
+        "title": "Cómo funciona la destilación de caja negra",
+        "summary": "Explica paso a paso cómo se destila en la práctica un modelo propietario sin acceso a sus pesos, para informar los proyectos de ley y el debate sobre la destilación adversarial. Señala dónde pudieron haberla aplicado laboratorios chinos sobre modelos estadounidenses, qué incertidumbres hay sobre sus métodos y su posible impacto en el desarrollo de la IA en China.",
+        "keywords": [
+          "Inteligencia artificial",
+          "China",
+          "Ciberseguridad",
+          "Estados Unidos"
+        ]
+      },
+      "en": {
+        "title": "How Black-Box Distillation Works",
+        "summary": "Explains step by step how a proprietary model is distilled in practice without access to its weights, to inform proposed legislation and the debate on adversarial distillation. It notes where Chinese labs may have applied it to US models, the uncertainties about their methods, and its possible impact on China’s AI development.",
+        "keywords": [
+          "Artificial intelligence",
+          "China",
+          "Cybersecurity",
+          "United States"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0017": {
+    "content_type": "noticia",
+    "i18n": {
+      "es": {
+        "title": "La oficina de supervisión de IA del Pentágono no da abasto con las ambiciones del departamento, según la GAO",
+        "summary": "Artículo de Military Times, con declaraciones de un investigador de CSET, sobre un informe del Tribunal de Cuentas de EE. UU. (GAO) que detecta falta de personal, iniciativas incompletas y problemas de supervisión mientras el Pentágono acelera su adopción de la IA.",
+        "keywords": [
+          "Inteligencia artificial",
+          "Estados Unidos"
+        ]
+      },
+      "en": {
+        "title": "Pentagon AI oversight office struggles to keep pace with department’s ambitions, GAO finds",
+        "summary": "Military Times article, quoting a CSET researcher, on a US Government Accountability Office (GAO) report finding staff shortages, incomplete initiatives and oversight problems as the Pentagon speeds up its adoption of AI.",
+        "keywords": [
+          "Artificial intelligence",
+          "United States"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0018": {
+    "content_type": "opinion",
+    "i18n": {
+      "es": {
+        "title": "La próxima frontera de China",
+        "summary": "Artículo de opinión de dos investigadores de CSET en Foreign Affairs sobre la rápida expansión de la industria espacial comercial y las capacidades espaciales militares de China (cohetes reutilizables, constelaciones de satélites, armas antisatélite) y cómo desafían la superioridad espacial de EE. UU.",
+        "keywords": [
+          "Aplicaciones",
+          "Inteligencia artificial",
+          "China",
+          "Competencia",
+          "Estados Unidos"
+        ]
+      },
+      "en": {
+        "title": "China’s Next Frontier",
+        "summary": "Op-ed by two CSET researchers in Foreign Affairs on the rapid growth of China’s commercial space industry and military space capabilities (reusable rockets, satellite constellations, counterspace weapons) and how they challenge US space superiority.",
+        "keywords": [
+          "Applications",
+          "Artificial intelligence",
+          "China",
+          "Compete",
+          "United States"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0019": {
+    "content_type": "noticia",
+    "i18n": {
+      "es": {
+        "title": "Boletín de IA y tecnología: Jay Clayton toma el mando",
+        "summary": "Boletín de The Washington Post, con declaraciones de un investigador de CSET, sobre el nombramiento por Trump del director de Inteligencia Nacional Jay Clayton al frente de una nueva «Super Intelligence Force» y sus implicaciones para la política de IA de EE. UU.",
+        "keywords": [
+          "Inteligencia artificial",
+          "Estados Unidos"
+        ]
+      },
+      "en": {
+        "title": "AI & Tech Brief: Jay Clayton takes control",
+        "summary": "Washington Post newsletter, quoting a CSET researcher, on Trump appointing Director of National Intelligence Jay Clayton to lead a new “Super Intelligence Force” and what it means for US AI policy.",
+        "keywords": [
+          "Artificial intelligence",
+          "United States"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0020": {
+    "content_type": "analisis",
+    "i18n": {
+      "es": {
+        "title": "¿Deberíamos rastrear los chips de IA?",
+        "summary": "Entrevista sobre un informe de CSET que analiza hasta qué punto los métodos de verificación de ubicación de los chips de IA avanzados pueden mejorar, o no, el cumplimiento de los controles de exportación y frenar el contrabando.",
+        "keywords": [
+          "Inteligencia artificial",
+          "China",
+          "Ciberseguridad",
+          "Controles de exportación",
+          "Semiconductores",
+          "Estados Unidos"
+        ]
+      },
+      "en": {
+        "title": "Should We Track AI Chips?",
+        "summary": "Interview about a CSET report examining how far location-verification methods for advanced AI chips can, or cannot, improve enforcement of export controls and curb smuggling.",
+        "keywords": [
+          "Artificial intelligence",
+          "China",
+          "Cybersecurity",
+          "Export controls",
+          "Semiconductors",
+          "United States"
+        ]
+      }
+    }
   }
 }
