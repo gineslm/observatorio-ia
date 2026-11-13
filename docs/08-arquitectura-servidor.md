@@ -12,6 +12,8 @@ Estado: 2026-11-13. **Implementado en local, sin desplegar.** Diagnóstico de Ar
    - Si no lo tiene: un servicio externo de cron que haga POST a `<URL>/cron/fetch_feeds.php` con la cabecera `X-Cron-Token: <CRON_TOKEN>`.
 6. Programar en Claude Desktop la tarea de `agent/tarea-semanal.md`.
 
+**Cron configurado (2026-11-13):** servicio externo cron-job.org, a diario a las 06:00 (Europe/Madrid), POST con la cabecera `X-Cron-Token` y avisos por email si falla o se recupera. Corta a los 30 s; `fetch_feeds.php` sigue ejecutándose aunque se desconecte (`ignore_user_abort`, hasta 300 s).
+
 **Implementado:** reparto por autor (`items/feed`, `items/consulta`, `enrichment`) con ids `F`/`C`, `cron/fetch_feeds.php` (CLI o POST con token, bloqueo, escritura atómica, logs), `scripts/sync.py` (`bajar`, `subir`, `desplegar`, `sembrar`, `guardar-clave`), `.htaccess` en `deploy/`. El marcador ✓/✗ solo funciona con `php -S` en local; en el hosting no aparece y `api/` no se despliega.
 
 ## 1. Lo decidido por la persona responsable

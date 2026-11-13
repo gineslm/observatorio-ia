@@ -27,6 +27,10 @@ if (!$cli) {
     }
 }
 
+// El cron externo corta la conexión a los 30 s: la captura sigue aunque el cliente se desconecte.
+ignore_user_abort(true);
+set_time_limit(300);
+
 $dataDir = realpath(__DIR__ . '/../data');
 if ($dataDir === false) fail('No se encuentra la carpeta data/');
 $limit = 10;
