@@ -67,7 +67,16 @@ def connect(cfg: dict, verify: bool = True) -> FTP_TLS:
     # tras abrir la conexión TCP, sin dejar de verificar la cadena ni el nombre.
     if cfg.get("FTP_TLS_NAME"):
         ftp.host = cfg["FTP_TLS_NAME"]
-    ftp.login(cfg["FTP_USER"], password(cfg))
+    try:
+        ftp.login(cfg["FTP_USER"], password(cfg))
+    except error_perm as ex:
+        if str(ex).startswith("530"):
+            sys.exit("Acceso rechazado por el servidor (530). Revisa:\n"
+                     "  1. El filtro de accesos FTP del panel de Aruba (¿está autorizada tu IP pública?).\n"
+                     "  2. La contraseña de la cuenta FTP (no se muestra al escribirla).\n"
+                     "  3. Si está guardada en el Administrador de credenciales, vuelve a guardarla: sync.py guardar-clave\n"
+                     "No reintentes muchas veces seguidas: el servidor puede bloquear la IP tras varios fallos.")
+        raise
     ftp.prot_p()  # cifra también el canal de datos
     return ftp
 
