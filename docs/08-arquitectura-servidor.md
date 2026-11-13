@@ -66,6 +66,7 @@ Servidor y equipo local escriben a la vez sobre los mismos datos. Para no pisars
 Confianza baja-media: depende del plan contratado. Hay que verificarlo en el panel o con soporte.
 
 **Ya conocido (2026-11-13, de otro proyecto en el mismo hosting).** Host, usuario, carpeta y URL están en `private/servidor-aruba.env`, que no se versiona; la contraseña nunca se guarda:
+- El certificado TLS del FTP compartido está a nombre del servidor de Aruba, no del dominio. `scripts/ftps.py` conecta al host del dominio pero verifica el certificado contra `FTP_TLS_NAME` (en `private/`): sigue comprobando la autoridad de certificación y el nombre exacto. No se usa `--sin-verificar`.
 - Transferencia por **FTPS explícito** en el puerto 21. En Python: `ftplib.FTP_TLS` y después `prot_p()`. No consta que haya SFTP ni SSH, así que no se puede usar git en el servidor y el despliegue y la sincronización se hacen por FTPS.
 - El portal irá en una **subcarpeta del dominio**, todavía no creada. Al estar dentro del document root, hay que proteger `data/`, `cron/` e `inc/` del acceso web.
 

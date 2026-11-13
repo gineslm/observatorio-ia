@@ -62,6 +62,11 @@ def connect(cfg: dict, verify: bool = True) -> FTP_TLS:
         ctx.verify_mode = ssl.CERT_NONE
     ftp = FTP_TLS(context=ctx, timeout=30)
     ftp.connect(cfg["FTP_HOST"], int(cfg.get("FTP_PORT", 21)))
+    # Hosting compartido: el certificado está a nombre del servidor del proveedor, no del dominio.
+    # ftplib verifica contra self.host (canal de control y de datos); se fija el nombre esperado
+    # tras abrir la conexión TCP, sin dejar de verificar la cadena ni el nombre.
+    if cfg.get("FTP_TLS_NAME"):
+        ftp.host = cfg["FTP_TLS_NAME"]
     ftp.login(cfg["FTP_USER"], password(cfg))
     ftp.prot_p()  # cifra también el canal de datos
     return ftp
