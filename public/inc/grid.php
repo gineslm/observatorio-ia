@@ -26,7 +26,7 @@ const NONE = '_';  // valor para «sin dato» (sin tipo, sin autor…)
  * Filtros del tablero. values: valores de una pieza; label: texto de un valor; order: orden de las opciones (opcional).
  * Dentro de un filtro, los valores se combinan con O; entre filtros, con Y.
  */
-function board_filters(array $sources, array $marks, bool $local): array {
+function board_filters(array $sources, array $marks, bool $withStatus): array {
     $none = fn($arr) => $arr ?: [NONE];
     $f = [
         'fuente' => ['col' => 'col.source', 'values' => fn($it) => [$it['source_id']],
@@ -44,7 +44,7 @@ function board_filters(array $sources, array $marks, bool $local): array {
                          return $k;
                      }, 'label' => fn($v) => $v],
     ];
-    if ($local) {
+    if ($withStatus) {
         $f['estado'] = ['col' => 'col.status', 'values' => fn($it) => [item_status($marks[$it['id']] ?? null)],
                         'label' => fn($v) => t('status.' . $v), 'order' => STATUSES,
                         'icon' => fn($v) => status_icon($v, 16)];
@@ -127,7 +127,7 @@ function grid_columns(): array {
         'date'   => ['label' => 'col.date', 'kw' => true],
         'type'   => ['label' => 'col.type', 'filter' => 'tipo', 'kw' => true],
         'lang'   => ['label' => 'col.lang', 'filter' => 'idioma', 'off' => true, 'kw' => true],
-    ] + (function_exists('is_local_request') && is_local_request()
+    ] + (function_exists('status_visible') && status_visible()
         ? ['status' => ['label' => 'col.status', 'filter' => 'estado', 'kw' => true]] : []);
 }
 

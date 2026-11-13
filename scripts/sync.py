@@ -2,8 +2,9 @@
 
 Cada fichero tiene un único autor:
   servidor      -> data/items/feed/*.json           (se BAJAN, nunca se suben)
-  equipo local  -> data/sources.json, data/items/consulta/*.json, data/enrichment/*.json  (se SUBEN)
-  solo local    -> data/feedback/ (marcas), data/gold-set/   (no se suben)
+  equipo local  -> data/sources.json, data/items/consulta/*.json, data/enrichment/*.json,
+                   data/feedback/interest.json (estados de valoración; online solo lectura)  (se SUBEN)
+  solo local    -> data/gold-set/   (no se sube)
 
 Órdenes:
   guardar-clave  guarda la contraseña FTPS en el Administrador de credenciales de Windows (una vez)
@@ -29,7 +30,8 @@ import ftps  # noqa: E402
 ROOT = ftps.ROOT
 PY = sys.executable
 
-LOCAL_OWNED = ["data/sources.json", "data/items/consulta/*.json", "data/enrichment/*.json"]
+LOCAL_OWNED = ["data/sources.json", "data/items/consulta/*.json", "data/enrichment/*.json",
+               "data/feedback/interest.json"]  # estados: se editan en local, online se muestran en solo lectura
 SERVER_OWNED_DIR = "data/items/feed"
 CODE = {  # destino remoto -> origen local
     "index.php": "public/index.php",
@@ -51,7 +53,7 @@ CODE = {  # destino remoto -> origen local
     "data/.htaccess": "deploy/htaccess-denegar",
     "cron/.htaccess": "deploy/htaccess-cron",
 }
-# No se despliegan: api/ y assets/interest.js (marcador solo local).
+# No se despliegan: api/ y assets/interest.js (editar el estado es solo local).
 
 
 def run(*cmd) -> subprocess.CompletedProcess:

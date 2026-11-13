@@ -6,9 +6,9 @@ require_once __DIR__ . '/feedback.php';
 function sources_page(string $titleKey, string $active, string $leadKey, callable $belongs): void {
     $all = array_filter(load_sources(), $belongs);
     $counts = array_count_values(array_column(load_items(), 'source_id'));
-    // Piezas por fuente y estado de valoración (solo en local, donde existen las marcas).
+    // Piezas por fuente y estado de valoración (en local y, en solo lectura, online).
     $byStatus = null;
-    if (is_local_request()) {
+    if (status_visible()) {
         $marks = load_feedback();
         $byStatus = [];
         foreach (load_items() as $it) {

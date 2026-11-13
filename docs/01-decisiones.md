@@ -35,6 +35,7 @@ Observatorio documental sobre inteligencia artificial: registra fuentes, selecci
 15. Evaluación de fuentes en dos fases (2026-11-12). Las fuentes con páginas inaccesibles se quedan en NE hasta que se aporte el contenido o se encuentre otra vía.
 16. Marcador de interés (2026-11-13): la persona responsable marca piezas como interesantes o no desde el portal local (✓/✗). Única escritura permitida desde PHP, solo en local y en `data/feedback/interest.json`; el agente la usa para afinar búsquedas y nunca la modifica.
 17. Estados de valoración (2026-11-13): el marcador ✓/✗ se sustituye por tres estados en orden de avance: pendiente (sin registro), interesante (✓, `interesting: true`) y destacado (★, además `featured: true`). Lo marcado como interesante se lee y después se queda en ✓ o pasa a ★. Formato compatible: las marcas existentes no se reescriben.
+18. Estado visible online (2026-11-13): `data/feedback/interest.json` se sube al servidor con `sync.py subir` y la web pública muestra el estado en solo lectura (columna, filtro y recuentos por fuente). Editar sigue siendo solo local. Consecuencia aceptada por la persona responsable: sus valoraciones son públicas.
 
 ## Conflictos declarados
 - Claude es un modelo de Anthropic. Evaluar fuentes vinculadas a Anthropic (Import AI, Transluce) exige revisión humana reforzada.

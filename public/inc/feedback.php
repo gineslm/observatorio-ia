@@ -14,6 +14,16 @@ function is_local_request(): bool {
     return PHP_SAPI === 'cli-server' && in_array($ip, ['127.0.0.1', '::1'], true);
 }
 
+/** El estado se muestra en local y, en solo lectura, online si se ha subido el fichero de marcas. */
+function status_visible(): bool {
+    return is_local_request() || is_file(FEEDBACK_FILE);
+}
+
+/** Cambiar el estado: solo en local. */
+function status_editable(): bool {
+    return is_local_request();
+}
+
 // Estados de valoración, en orden de avance: pendiente (sin registro) -> ok (interesante) -> destacado.
 const STATUSES = ['sin', 'ok', 'estrella'];
 

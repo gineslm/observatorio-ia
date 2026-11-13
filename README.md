@@ -51,7 +51,7 @@ Abrir http://127.0.0.1:8000. Interfaz en castellano o inglés (selector ES/EN en
 - **Fuentes** (`fuentes.php`): fuentes de contenido con su valoración C1–C5.
 - **Recursos** (`recursos.php`): herramientas, bases de datos e índices (`kind: infrastructure`).
 
-En local, cada pieza del tablero tiene un estado de valoración (pendiente ○ → interesante ✓ → destacado ★; cada clic en el icono avanza un paso) que se guarda en `data/feedback/interest.json` y se puede filtrar desde la columna Estado. Sirve para afinar las búsquedas de la tarea semanal. Fuera de localhost no se muestra ni se puede escribir.
+En local, cada pieza del tablero tiene un estado de valoración (pendiente ○ → interesante ✓ → destacado ★; cada clic en el icono avanza un paso) que se guarda en `data/feedback/interest.json` y se puede filtrar desde la columna Estado. Sirve para afinar las búsquedas de la tarea semanal. Solo se puede cambiar en local; en la web pública se muestra en solo lectura una vez subido con `sync.py subir` (las marcas son públicas).
 
 ## Capturar piezas y sincronizar con el servidor
 

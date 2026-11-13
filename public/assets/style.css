@@ -210,3 +210,5 @@ table.items { width: 100%; border-collapse: collapse; font-size: .9rem; }
 .st-chip-ok { background: var(--alto); border-color: var(--alto); }
 .st-chip-sin { background: transparent; border-color: var(--muted); color: var(--muted); }
 .st-chip.zero { opacity: .4; }
+.status-btn.readonly { cursor: default; }
+.status-btn.readonly:hover { background: transparent; }

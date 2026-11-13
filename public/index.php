@@ -6,7 +6,8 @@ require __DIR__ . '/inc/grid.php';
 $sources = load_sources();
 $items = load_items();
 $local = is_local_request();
-$marks = $local ? load_feedback() : [];
+$showStatus = status_visible();
+$marks = $showStatus ? load_feedback() : [];
 
 // Vista del listado: tarjetas o tabla. Se recuerda en una cookie, como el idioma.
 $view = q('vista');
@@ -17,7 +18,7 @@ if (in_array($view, ['tarjetas', 'tabla'], true)) {
 }
 
 // Filtros: selección múltiple por columna, en la URL.
-$filters = board_filters($sources, $marks, $local);
+$filters = board_filters($sources, $marks, $showStatus);
 $sel = [];
 foreach ($filters as $k => $_) $sel[$k] = qa($k);
 $fq = q('q');
@@ -61,7 +62,7 @@ layout_start(t('board.title'), 'index.php', ['placeholder' => t('search.items'),
       $title = item_text($it, 'title');
       $date = $it['published_at'] ?? t('no_date');
       $author = implode(', ', $it['authors'] ?? []);
-      $extra = $local ? ['status' => item_status($marks[$it['id']] ?? null)] : [];
+      $extra = $showStatus ? ['status' => item_status($marks[$it['id']] ?? null)] : [];
       $rows[] = $extra + [
           'id' => $it['id'],
           'title' => $title,

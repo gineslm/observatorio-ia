@@ -154,10 +154,15 @@ function card(array $c): void {
 <?php }
 
 /**
- * Botón de estado de valoración (solo local). Cada clic avanza: pendiente -> ok -> destacado -> pendiente.
- * Pinta los tres iconos; el CSS muestra el del estado actual (data-status). Lo gestiona assets/interest.js.
+ * Botón de estado de valoración. En local, cada clic avanza: pendiente -> ok -> destacado -> pendiente
+ * (lo gestiona assets/interest.js). Online, solo el icono del estado, sin poder cambiarlo.
+ * Pinta los tres iconos; el CSS muestra el del estado actual (data-status).
  */
 function status_button(string $id, string $status): void {
+    if (!status_editable()) { ?>
+      <span class="round-btn status-btn readonly" data-status="<?= e($status) ?>" role="img" title="<?= e(t('status.' . $status)) ?>" aria-label="<?= e(t('col.status') . ': ' . t('status.' . $status)) ?>"><?= status_icon($status) ?></span>
+<?php   return;
+    }
     $next = ['sin' => 'ok', 'ok' => 'estrella', 'estrella' => 'sin'][$status]; ?>
       <button type="button" class="round-btn status-btn" data-id="<?= e($id) ?>" data-status="<?= e($status) ?>"
               title="<?= e(t('status.' . $status) . ' · ' . t('status.next', t('status.' . $next))) ?>" aria-label="<?= e(t('col.status') . ': ' . t('status.' . $status)) ?>"
@@ -191,7 +196,7 @@ function chips(array $list): void {
 <?php }
 
 /**
- * $byStatus: piezas de la fuente por estado de valoración (solo local) o null.
+ * $byStatus: piezas de la fuente por estado de valoración o null si no se muestra el estado.
  * Se muestran como chips con el número en la línea del título: destacado (amarillo), interesante (verde), pendiente (contorno).
  */
 function source_card(array $s, int $nItems = 0, ?array $byStatus = null): void {
