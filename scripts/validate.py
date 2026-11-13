@@ -47,15 +47,40 @@ def main() -> int:
             (errors if s.get("reviewed_by_human") else warnings).append(msg)
 
     item_ids = set()
-    for path in sorted((DATA / "items").glob("*.json")):
-        for it in check_schema(path, "items.schema.json"):
-            if not isinstance(it, dict):
-                continue
-            if it.get("id") in item_ids:
-                errors.append(f"{path.name}: id duplicado {it.get('id')}")
-            item_ids.add(it.get("id"))
-            if it.get("source_id") not in source_ids:
-                errors.append(f"{path.name}: {it.get('id')} apunta a fuente inexistente {it.get('source_id')}")
+    # Piezas: una carpeta por autor (feed = servidor, consulta = equipo local).
+    for loose in (DATA / "items").glob("*.json"):
+        errors.append(f"{loose.relative_to(ROOT)}: las piezas deben ir en items/feed/ o items/consulta/")
+    urls = set()
+    for folder, prefix in (("feed", "F"), ("consulta", "C")):
+        for path in sorted((DATA / "items" / folder).glob("*.json")):
+            rel = path.relative_to(ROOT)
+            for it in check_schema(path, "items.schema.json"):
+                if not isinstance(it, dict):
+                    continue
+                iid = it.get("id", "")
+                if iid in item_ids:
+                    errors.append(f"{rel}: id duplicado {iid}")
+                item_ids.add(iid)
+                letter = iid[10:11] if len(iid) == 15 else ""
+                if letter and letter != prefix:
+                    errors.append(f"{rel}: {iid} no corresponde a la carpeta {folder} (esperado {prefix})")
+                if it.get("url") in urls:
+                    errors.append(f"{rel}: URL duplicada {it.get('url')}")
+                urls.add(it.get("url"))
+                if it.get("source_id") not in source_ids:
+                    errors.append(f"{rel}: {iid} apunta a fuente inexistente {it.get('source_id')}")
+
+    # Enriquecimiento (autor: equipo local).
+    enriched = set()
+    for path in sorted((DATA / "enrichment").glob("*.json")):
+        data = check_schema(path, "enrichment.schema.json")
+        for iid in data if isinstance(data, dict) else {}:
+            if iid not in item_ids:
+                errors.append(f"{path.relative_to(ROOT)}: enriquecimiento de pieza inexistente {iid}")
+            enriched.add(iid)
+    pending = sorted(item_ids - enriched)
+    if pending:
+        warnings.append(f"{len(pending)} piezas sin enriquecer (resumen/traducción pendientes): {', '.join(pending[:5])}{'…' if len(pending) > 5 else ''}")
 
     check_schema(DATA / "gold-set" / "corrections.json", "corrections.schema.json")
 

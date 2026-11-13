@@ -23,7 +23,7 @@ if ($origin === '' || $originHost !== ($_SERVER['HTTP_HOST'] ?? '')) {
 }
 
 $id = (string)($_POST['item_id'] ?? '');
-if (!preg_match('/^P-\d{4}-\d{2}-\d{4}$/', $id)) fail(400, 'item_id no válido');
+if (!preg_match('/^P-\d{4}-\d{2}-[FC]?\d{4}$/', $id)) fail(400, 'item_id no válido');
 if (!in_array($id, array_column(load_items(), 'id'), true)) fail(404, 'Pieza inexistente');
 
 $raw = (string)($_POST['value'] ?? '');

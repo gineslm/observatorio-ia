@@ -2,14 +2,17 @@
 // Utilidades comunes del visor. Solo lectura: los JSON de data/ son la fuente de verdad.
 declare(strict_types=1);
 
-const DATA_DIR = __DIR__ . '/../../data';
+// En local, data/ es hermana de public/; en el servidor se despliega junto a index.php.
+define('DATA_DIR', is_dir(__DIR__ . '/../data') ? __DIR__ . '/../data' : __DIR__ . '/../../data');
+// Ruta base del portal (p. ej. /portal/ia/) para que la cookie no afecte a otras webs del dominio.
+define('BASE_PATH', rtrim(str_replace('\\', '/', dirname($_SERVER['SCRIPT_NAME'] ?? '/')), '/') . '/');
 const LANGS = ['es' => 'Castellano', 'en' => 'English'];
 const CRITERIA = ['c1', 'c2', 'c3', 'c4', 'c5'];
 
 // ---------- idioma ----------
 $requested = $_GET['lang'] ?? null;
 if (is_string($requested) && isset(LANGS[$requested])) {
-    setcookie('lang', $requested, ['expires' => time() + 31536000, 'path' => '/', 'samesite' => 'Lax']);
+    setcookie('lang', $requested, ['expires' => time() + 31536000, 'path' => BASE_PATH, 'samesite' => 'Lax']);
     define('LANG', $requested);
 } else {
     $c = $_COOKIE['lang'] ?? 'es';
@@ -45,11 +48,23 @@ function load_sources(): array {
 function load_items(): array {
     static $cache = null;
     if ($cache !== null) return $cache;
+    // Piezas en bruto de ambos autores + enriquecimiento (textos y tipo) unido por id.
     $items = [];
-    foreach (glob(DATA_DIR . '/items/*.json') ?: [] as $f) {
+    foreach (array_merge(glob(DATA_DIR . '/items/feed/*.json') ?: [], glob(DATA_DIR . '/items/consulta/*.json') ?: []) as $f) {
         $arr = json_decode((string)file_get_contents($f), true);
         if (is_array($arr)) $items = array_merge($items, $arr);
     }
+    $enrich = [];
+    foreach (glob(DATA_DIR . '/enrichment/*.json') ?: [] as $f) {
+        $map = json_decode((string)file_get_contents($f), true);
+        if (is_array($map)) $enrich += $map;
+    }
+    foreach ($items as &$it) {
+        $x = $enrich[$it['id']] ?? [];
+        $it['i18n'] = $x['i18n'] ?? [];
+        $it['content_type'] = $x['content_type'] ?? null;
+    }
+    unset($it);
     usort($items, fn($a, $b) => strcmp($b['published_at'] ?? '', $a['published_at'] ?? ''));
     return $cache = $items;
 }

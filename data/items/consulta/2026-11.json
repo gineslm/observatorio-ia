@@ -1,0 +1,96 @@
+[
+  {
+    "id": "P-2026-11-0021",
+    "source_id": "S11",
+    "url": "https://www.adalovelaceinstitute.org/blog/preparing-young-people-for-work-in-the-ai-era/",
+    "title": "Preparing young people for work in the AI era",
+    "authors": [
+      "Josh Hillman"
+    ],
+    "published_at": "2026-11-09",
+    "captured_at": "2026-11-13",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "consulta",
+      "detail": "site:adalovelaceinstitute.org Ada Lovelace Institute report November 2026"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0022",
+    "source_id": "S11",
+    "url": "https://www.adalovelaceinstitute.org/press-release/home-office-announcement-on-police-facial-recognition-legislation/",
+    "title": "Ada Lovelace Institute response to Home Office announcement on police facial recognition legislation",
+    "authors": [
+      "Michael Birtwistle"
+    ],
+    "published_at": "2026-11-04",
+    "captured_at": "2026-11-13",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "consulta",
+      "detail": "site:adalovelaceinstitute.org Ada Lovelace Institute report November 2026"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0023",
+    "source_id": "S21",
+    "url": "https://merics.org/en/tracker/china-pushes-ahead-ai-adoption-and-prepares-possible-jobs-crisis",
+    "title": "China pushes ahead with AI adoption and prepares for a possible jobs crisis",
+    "authors": [
+      "Alexander Brown",
+      "Elizabeth Ru-Tung Sun"
+    ],
+    "published_at": "2026-10-26",
+    "captured_at": "2026-11-13",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "consulta",
+      "detail": "site:merics.org MERICS China AI analysis 2026"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  }
+]

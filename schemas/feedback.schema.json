@@ -8,7 +8,7 @@
     "required": ["item_id", "interesting", "date"],
     "additionalProperties": false,
     "properties": {
-      "item_id": {"type": "string", "pattern": "^P-\\d{4}-\\d{2}-\\d{4}$"},
+      "item_id": {"type": "string", "pattern": "^P-\\d{4}-\\d{2}-[FC]?\\d{4}$"},
       "interesting": {"type": "boolean"},
       "date": {"type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$"}
     }

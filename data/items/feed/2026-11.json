@@ -1,0 +1,686 @@
+[
+  {
+    "id": "P-2026-11-0001",
+    "source_id": "S09",
+    "url": "https://algorithmwatch.org/de/ki-in-der-migrationsverwaltung-keine-experimente-mit-den-daten-von-migrantinnen-und-klare-grenzen-fur-ki-systeme/",
+    "title": "KI in der Migrationsverwaltung: Keine Experimente mit den Daten von Migrant*innen und klare Grenzen für KI-Systeme",
+    "authors": [],
+    "published_at": "2026-10-15",
+    "captured_at": "2026-11-12",
+    "language": "de",
+    "original_language": "de",
+    "translated_from": null,
+    "source_keywords": [
+      "Positions",
+      "Datenschutz",
+      "Diskriminierung",
+      "Öffentliche Verwaltung",
+      "Polizeiarbeit"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://algorithmwatch.org/en/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0002",
+    "source_id": "S09",
+    "url": "https://algorithmwatch.org/de/entscheidungsbaum-generative-ki/",
+    "title": "Entscheidungsbaum: Dein Weg zu einem verantwortungsvollen Umgang mit Chatbots",
+    "authors": [
+      "Pia Grundmann"
+    ],
+    "published_at": "2026-10-13",
+    "captured_at": "2026-11-12",
+    "language": "de",
+    "original_language": "de",
+    "translated_from": null,
+    "source_keywords": [
+      "Publications",
+      "Chatbot",
+      "generative KI",
+      "Meinungsbildung",
+      "ZukunftD"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://algorithmwatch.org/en/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0003",
+    "source_id": "S09",
+    "url": "https://algorithmwatch.org/de/algorithmwatch-kritisiert-im-wirtschaftsausschuss-weniger-effizienz-bei-rechenzentren-kostet-die-wirtschaft-milliarden/",
+    "title": "AlgorithmWatch kritisiert im Wirtschaftsausschuss: Weniger Effizienz bei Rechenzentren kostet die Wirtschaft Milliarden",
+    "authors": [],
+    "published_at": "2026-10-02",
+    "captured_at": "2026-11-12",
+    "language": "de",
+    "original_language": "de",
+    "translated_from": null,
+    "source_keywords": [
+      "Press release",
+      "Energieeffizienz",
+      "Nachhaltigkeit",
+      "Rechenzentren"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://algorithmwatch.org/en/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0004",
+    "source_id": "S09",
+    "url": "https://algorithmwatch.org/de/verschlechterungen-von-effizienzstandards-bei-rechenzentren-fuhren-zu-zusatzlichen-energiebedarfen/",
+    "title": "Studie: Verschlechterungen von Effizienzstandards bei Rechenzentren führen zu sehr großen zusätzlichen Energiebedarfen",
+    "authors": [
+      "Dr. Julian Bothe"
+    ],
+    "published_at": "2026-10-02",
+    "captured_at": "2026-11-12",
+    "language": "de",
+    "original_language": "de",
+    "translated_from": null,
+    "source_keywords": [
+      "Publications",
+      "Energieeffizienz",
+      "Nachhaltigkeit",
+      "Rechenzentren"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://algorithmwatch.org/en/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0005",
+    "source_id": "S17",
+    "url": "https://chinai.substack.com/p/chinai-381-chinas-venture-capital",
+    "title": "ChinAI #381: China’s Venture Capital Market is Defying Common Sense",
+    "authors": [
+      "Jeffrey Ding"
+    ],
+    "published_at": "2026-11-09",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://chinai.substack.com/feed"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0006",
+    "source_id": "S17",
+    "url": "https://chinai.substack.com/p/chinai-380-its-getting-more-and-more",
+    "title": "ChinAI #380: It’s getting more and more difficult to make money",
+    "authors": [
+      "Jeffrey Ding"
+    ],
+    "published_at": "2026-11-02",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://chinai.substack.com/feed"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0007",
+    "source_id": "S17",
+    "url": "https://chinai.substack.com/p/chinai-379-chinese-ai-can-only-make",
+    "title": "ChinAI #379: “Chinese AI only makes trash TV?”",
+    "authors": [
+      "Jeffrey Ding"
+    ],
+    "published_at": "2026-10-26",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://chinai.substack.com/feed"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0008",
+    "source_id": "S17",
+    "url": "https://chinai.substack.com/p/chinai-378-chinas-two-day-weekend",
+    "title": "ChinAI #378: China’s Two-day Weekend Defenders",
+    "authors": [
+      "Jeffrey Ding"
+    ],
+    "published_at": "2026-10-19",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://chinai.substack.com/feed"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0009",
+    "source_id": "S07",
+    "url": "https://ainowinstitute.org/news/the-ai-safety-debate-has-lost-the-plot-we-asked-10-experts-what-the-real-nightmares-are",
+    "title": "The AI Safety Debate Has Lost the Plot. We Asked 10 Experts What the Real Nightmares Are",
+    "authors": [
+      "AI Now Institute"
+    ],
+    "published_at": "2026-11-10",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [
+      "News",
+      "Press"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://ainowinstitute.org/feed"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0010",
+    "source_id": "S07",
+    "url": "https://ainowinstitute.org/news/palantir-hires-a-former-democratic-senator-as-it-faces-scrutiny-in-new-congress",
+    "title": "Palantir hires a former Democratic senator as it faces scrutiny in new Congress",
+    "authors": [
+      "AI Now Institute"
+    ],
+    "published_at": "2026-11-09",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [
+      "News",
+      "Press"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://ainowinstitute.org/feed"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0011",
+    "source_id": "S07",
+    "url": "https://ainowinstitute.org/news/2026-election-breakdown-americans-vote-down-data-centers-ai-and-oligarchy",
+    "title": "2026 election breakdown: Americans vote down data centers, AI and oligarchy",
+    "authors": [
+      "AI Now Institute"
+    ],
+    "published_at": "2026-11-06",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [
+      "News",
+      "Press"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://ainowinstitute.org/feed"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0012",
+    "source_id": "S07",
+    "url": "https://ainowinstitute.org/news/openai-is-already-trying-to-shape-the-2028-election",
+    "title": "OpenAI is already trying to shape the 2028 election",
+    "authors": [
+      "AI Now Institute"
+    ],
+    "published_at": "2026-11-04",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [
+      "News",
+      "Press"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://ainowinstitute.org/feed"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0013",
+    "source_id": "S07",
+    "url": "https://ainowinstitute.org/news/coming-soon-guest-report-on-ai-corporate-structure-and-mission-accountability",
+    "title": "Coming Soon: Guest Report on AI Corporate Structure and Mission Accountability",
+    "authors": [
+      "Maroussia Lévesque"
+    ],
+    "published_at": "2026-11-04",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [
+      "Announcements",
+      "Guest Post",
+      "News",
+      "Publications"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://ainowinstitute.org/feed"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0014",
+    "source_id": "S09",
+    "url": "https://algorithmwatch.org/de/stellungnahme-novelle-energieeffizienzgesetz/",
+    "title": "Stellungnahme zur öffentlichen Anhörung anlässlich der geplanten Novelle des Energieeffizienzgesetzes",
+    "authors": [
+      "Dr. Julian Bothe"
+    ],
+    "published_at": "2026-10-01",
+    "captured_at": "2026-11-12",
+    "language": "de",
+    "original_language": "de",
+    "translated_from": null,
+    "source_keywords": [
+      "Positions",
+      "Deutschland",
+      "EnEfG",
+      "Klima"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://algorithmwatch.org/en/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0015",
+    "source_id": "S17",
+    "url": "https://chinai.substack.com/p/chinai-377-us-dominance-of-the-center",
+    "title": "ChinAI #377: American Data Center Hegemony - the Center-Satellite Structure",
+    "authors": [
+      "Jeffrey Ding"
+    ],
+    "published_at": "2026-10-12",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://chinai.substack.com/feed"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0016",
+    "source_id": "S20",
+    "url": "https://cset.georgetown.edu/article/ai-kill-switches-what-policymakers-should-know/",
+    "title": "AI Kill Switches: What Policymakers Should Know",
+    "authors": [
+      "Emily Tavenner"
+    ],
+    "published_at": "2026-11-12",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [
+      "Artificial intelligence",
+      "Cybersecurity",
+      "United States"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://cset.georgetown.edu/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0017",
+    "source_id": "S20",
+    "url": "https://cset.georgetown.edu/article/espionage-ai-and-the-risks-of-strategic-overreaction/",
+    "title": "Espionage, AI, and the Risks of Strategic Overreaction",
+    "authors": [
+      "Emily Tavenner"
+    ],
+    "published_at": "2026-11-11",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [
+      "Artificial intelligence",
+      "China",
+      "Cybersecurity",
+      "Export controls",
+      "Semiconductors",
+      "United States"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://cset.georgetown.edu/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0018",
+    "source_id": "S20",
+    "url": "https://cset.georgetown.edu/article/spy-scandal-highlights-contradictions-at-heart-of-trumps-china-policy/",
+    "title": "Spy scandal highlights contradictions at heart of Trump’s China policy",
+    "authors": [
+      "Jason Ly"
+    ],
+    "published_at": "2026-11-11",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [
+      "Artificial intelligence",
+      "Export controls"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://cset.georgetown.edu/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0019",
+    "source_id": "S20",
+    "url": "https://cset.georgetown.edu/article/the-phantom-life-of-alice-huang-alleged-chinese-spy-who-had-affair-with-nvidia-ceo/",
+    "title": "The phantom life of Alice Huang, alleged Chinese spy who had affair with Nvidia CEO",
+    "authors": [
+      "Jason Ly"
+    ],
+    "published_at": "2026-11-10",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [
+      "Artificial intelligence",
+      "Export controls"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://cset.georgetown.edu/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-0020",
+    "source_id": "S20",
+    "url": "https://cset.georgetown.edu/article/the-u-s-china-ai-competition-two-paths-to-artificial-general-intelligence/",
+    "title": "The U.S.–China AI Competition: Two Paths to Artificial General Intelligence",
+    "authors": [
+      "Emily Tavenner"
+    ],
+    "published_at": "2026-11-09",
+    "captured_at": "2026-11-12",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [
+      "Artificial intelligence",
+      "China",
+      "Research",
+      "Talent",
+      "United States",
+      "Workforce"
+    ],
+    "entry_reason": {
+      "channel": "feed",
+      "detail": "https://cset.georgetown.edu/feed/"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  }
+]

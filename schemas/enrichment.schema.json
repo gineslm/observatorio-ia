@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Enriquecimiento de piezas (data/enrichment/AAAA-MM.json)",
+  "description": "Autor: equipo local (tarea programada). Clave = id de pieza. Resúmenes con palabras propias; títulos y keywords, traducción fiel.",
+  "type": "object",
+  "propertyNames": {"pattern": "^P-\\d{4}-\\d{2}-[FC]?\\d{4}$"},
+  "additionalProperties": {
+    "type": "object",
+    "required": ["i18n"],
+    "additionalProperties": false,
+    "properties": {
+      "content_type": {"enum": ["noticia", "informe", "analisis", "opinion", "traduccion", "dataset", "otro", null], "description": "null = pendiente"},
+      "i18n": {
+        "type": "object",
+        "required": ["es", "en"],
+        "additionalProperties": false,
+        "properties": {"es": {"$ref": "#/$defs/texts"}, "en": {"$ref": "#/$defs/texts"}}
+      }
+    }
+  },
+  "$defs": {
+    "texts": {
+      "type": "object",
+      "required": ["title", "summary", "keywords"],
+      "additionalProperties": false,
+      "properties": {
+        "title": {"type": ["string", "null"], "description": "null = traducción pendiente"},
+        "summary": {"type": ["string", "null"], "description": "Resumen propio; null = pendiente. Nunca copiar el extracto del RSS."},
+        "keywords": {"type": "array", "items": {"type": "string"}, "description": "Traducción de source_keywords en el mismo orden"}
+      }
+    }
+  }
+}
