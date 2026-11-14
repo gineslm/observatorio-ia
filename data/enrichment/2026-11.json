@@ -905,5 +905,77 @@
         ]
       }
     }
+  },
+  "P-2026-11-F0021": {
+    "content_type": null,
+    "i18n": {
+      "es": {
+        "title": "Lawfare Daily: Aya Ibrahim sobre las prioridades progresistas para el nuevo Congreso demócrata",
+        "summary": "Episodio de pódcast de Lawfare, recogido por AI Now, en el que Aya Ibrahim plantea una agenda progresista para el próximo Congreso en materia de regulación de la IA y política hacia China. También repasa los aciertos y errores de la administración Biden en la competencia con China y cómo conciliar la seguridad económica con los objetivos económicos internos.",
+        "keywords": [
+          "Noticias",
+          "Prensa"
+        ]
+      },
+      "en": {
+        "title": "Lawfare Daily: Aya Ibrahim on Progressive Priorities for the New Democratic Congress",
+        "summary": "A Lawfare podcast episode, reposted by AI Now, in which Aya Ibrahim sets out a progressive agenda for the incoming Congress on AI regulation and China policy. It also reviews what the Biden administration got right and wrong on competition with China and how to reconcile economic security with domestic economic goals.",
+        "keywords": [
+          "News",
+          "Press"
+        ]
+      }
+    }
+  },
+  "P-2026-11-F0022": {
+    "content_type": "opinion",
+    "i18n": {
+      "es": {
+        "title": "Declaración de AI Now sobre la Ley bipartidista de Asequibilidad y Empleo (BAAJA) ante el Congreso de EE. UU.",
+        "summary": "AI Now se opone al proyecto de ley BAAJA: sostiene que funcionaría como un rescate encubierto de la industria de la IA, anularía la capacidad de los gobiernos estatales, locales y tribales para exigir responsabilidades a las grandes tecnológicas y aceleraría la construcción de centros de datos con escasas garantías para quienes pagan la electricidad. Pide al Congreso que se ponga del lado de las comunidades locales.",
+        "keywords": [
+          "Anuncios",
+          "Noticias"
+        ]
+      },
+      "en": {
+        "title": "AI Now Statement on the Bipartisan American Affordability and Jobs Act (BAAJA) to US Congress",
+        "summary": "AI Now opposes the BAAJA bill, arguing it would amount to a hidden bailout of the AI industry, strip state, local and Tribal governments of their ability to hold big tech to account, and speed up data-centre construction with few safeguards for electricity ratepayers. It urges Congress to side with local communities.",
+        "keywords": [
+          "Announcements",
+          "News"
+        ]
+      }
+    }
+  },
+  "P-2026-11-C0001": {
+    "content_type": null,
+    "i18n": {
+      "es": {
+        "title": "Import AI 480: economías espaciales autosostenidas; avances de la IA para la ciencia, y Meta construye manos perfectas para una superinteligencia",
+        "summary": "Número del boletín de Jack Clark que comenta, entre otros temas, un sistema de una startup que habría demostrado una conjetura de computación cuántica, un guante textil de Meta para registrar datos finos de manipulación, un estudio de la NASA sobre una industria lunar autosuficiente y un método para entrenar un modelo en centros de cálculo distantes. Cierra con un relato breve sobre IA terapéutica.",
+        "keywords": []
+      },
+      "en": {
+        "title": "Import AI 480: Self-sustaining space economies; AI for science progress, and Meta builds perfect hands for a superintelligence",
+        "summary": "An issue of Jack Clark's newsletter covering, among other things, a startup system that reportedly proved a quantum computing conjecture, a Meta textile glove for capturing fine-grained manipulation data, a NASA study on a self-sufficient lunar industry and a method for training one model across distant compute clusters. It closes with a short story about therapy AI.",
+        "keywords": []
+      }
+    }
+  },
+  "P-2026-11-C0002": {
+    "content_type": "opinion",
+    "i18n": {
+      "es": {
+        "title": "Al expandirse en China, las empresas europeas están vaciando Europa",
+        "summary": "El autor sostiene que las empresas europeas, sobre todo automovilísticas, químicas y proveedores del motor, trasladan a China I+D, producción y beneficios mientras recortan empleo en Europa, lo que debilita su base industrial y contradice la reducción de riesgos de la UE. Propone controlar más las inversiones en el exterior y condicionar la financiación pública a mantener la I+D en Europa.",
+        "keywords": []
+      },
+      "en": {
+        "title": "As they expand in China, Europe's companies are hollowing out Europe",
+        "summary": "The author argues that European firms, especially carmakers, chemical companies and auto suppliers, are moving R&D, production and profits to China while cutting jobs at home, weakening Europe's industrial base and undermining EU de-risking. He proposes tighter outbound investment screening and tying public funding to keeping R&D in Europe.",
+        "keywords": []
+      }
+    }
   }
 }

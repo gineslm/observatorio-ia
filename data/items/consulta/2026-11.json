@@ -92,5 +92,67 @@
       "date": null
     },
     "labels": []
+  },
+  {
+    "id": "P-2026-11-C0001",
+    "source_id": "S13",
+    "url": "https://importai.substack.com/p/import-ai-480-self-sustaining-space",
+    "title": "Import AI 480: Self-sustaining space economies; AI for science progress, and Meta builds perfect hands for a superintelligence",
+    "authors": [
+      "Jack Clark"
+    ],
+    "published_at": "2026-11-09",
+    "captured_at": "2026-11-14",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "consulta",
+      "detail": "importai.substack.com/archive, última semana"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
+  },
+  {
+    "id": "P-2026-11-C0002",
+    "source_id": "S21",
+    "url": "https://merics.org/en/comment/they-expand-china-europes-companies-are-hollowing-out-europe",
+    "title": "As they expand in China, Europe's companies are hollowing out Europe",
+    "authors": [
+      "Andreas Mischer"
+    ],
+    "published_at": "2026-11-06",
+    "captured_at": "2026-11-14",
+    "language": "en",
+    "original_language": "en",
+    "translated_from": null,
+    "source_keywords": [],
+    "entry_reason": {
+      "channel": "consulta",
+      "detail": "merics.org/en/analysis, última semana"
+    },
+    "argues": "",
+    "identifiers": {
+      "doi": null,
+      "arxiv": null,
+      "openalex": null
+    },
+    "links_to_primary": [],
+    "review": {
+      "reviewed_by_human": false,
+      "date": null
+    },
+    "labels": []
   }
 ]
