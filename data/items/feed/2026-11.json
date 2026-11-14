@@ -1357,5 +1357,73 @@
             "date": null
         },
         "labels": []
+    },
+    {
+        "id": "P-2026-11-F0021",
+        "source_id": "S07",
+        "url": "https://ainowinstitute.org/news/lawfare-daily-aya-ibrahim-on-progressive-priorities-for-the-new-democratic-congress",
+        "title": "Lawfare Daily: Aya Ibrahim on Progressive Priorities for the New Democratic Congress",
+        "authors": [
+            "AI Now Institute"
+        ],
+        "published_at": "2026-11-13",
+        "captured_at": "2026-11-14",
+        "language": "en",
+        "original_language": "en",
+        "translated_from": null,
+        "source_keywords": [
+            "News",
+            "Press"
+        ],
+        "entry_reason": {
+            "channel": "feed",
+            "detail": "https://ainowinstitute.org/feed"
+        },
+        "argues": "",
+        "identifiers": {
+            "doi": null,
+            "arxiv": null,
+            "openalex": null
+        },
+        "links_to_primary": [],
+        "review": {
+            "reviewed_by_human": false,
+            "date": null
+        },
+        "labels": []
+    },
+    {
+        "id": "P-2026-11-F0022",
+        "source_id": "S07",
+        "url": "https://ainowinstitute.org/news/announcement/ai-now-statement-on-the-bipartisan-american-affordability-and-jobs-act-baaja-to-us-congress",
+        "title": "AI Now Statement on the Bipartisan American Affordability and Jobs Act (BAAJA) to US Congress",
+        "authors": [
+            "AI Now Institute"
+        ],
+        "published_at": "2026-11-13",
+        "captured_at": "2026-11-14",
+        "language": "en",
+        "original_language": "en",
+        "translated_from": null,
+        "source_keywords": [
+            "Announcements",
+            "News"
+        ],
+        "entry_reason": {
+            "channel": "feed",
+            "detail": "https://ainowinstitute.org/feed"
+        },
+        "argues": "",
+        "identifiers": {
+            "doi": null,
+            "arxiv": null,
+            "openalex": null
+        },
+        "links_to_primary": [],
+        "review": {
+            "reviewed_by_human": false,
+            "date": null
+        },
+        "labels": []
     }
 ]
